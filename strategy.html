@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canva Field Marketing Strategy — Jason Singh</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+:root{--purple:#7D2AE7;--purple-light:#EEEDFE;--purple-mid:#ccc8f0;--purple-dark:#3C3489;--teal:#07B9CE;--teal-light:#e5f8fa;--teal-mid:#a3e5ea;--teal-dark:#085041;--blue:#2A89DA;--blue-light:#E6F1FB;--text:#1a1a1e;--text-2:#444;--text-3:#666;--text-4:#999;--bg:#fff;--bg-2:#f9f9f7;--border:#e4e4e4;--border-light:#f0f0ee}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--bg)}
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 40px}
+nav .nav-inner{max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:52px}
+nav .nav-name{font-size:16px;font-weight:500}nav .nav-name span{color:var(--purple);font-weight:600}
+nav ul{list-style:none;display:flex;gap:6px}
+nav a{font-size:13px;font-weight:500;color:var(--text-3);text-decoration:none;padding:6px 12px;border-radius:6px;transition:all .2s}
+nav a:hover,nav a.active{background:var(--purple-light);color:var(--purple-dark)}
+main{max-width:960px;margin:0 auto;padding:0 40px}
+.hero{padding:48px 0 32px;border-bottom:1px solid var(--border)}.hero-eyebrow{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:8px}
+.hero h1{font-family:'DM Serif Display',serif;font-size:38px;font-weight:400;line-height:1.2;margin-bottom:10px}
+.hero-sub{font-size:17px;color:var(--text-3);line-height:1.7;max-width:700px}
+.section{padding:40px 0 32px;border-bottom:1px solid var(--border-light)}.section:last-child{border:none}
+.sec-num{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--text-4);margin-bottom:6px}
+.sec-title{font-size:24px;font-weight:500;margin-bottom:6px}
+.sec-desc{font-size:16px;color:var(--text-3);line-height:1.7;margin-bottom:16px;max-width:700px}
+p{font-size:16px;color:var(--text-2);line-height:1.7}
+h3{font-size:17px;font-weight:500;margin-bottom:6px}
+.awareness{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-radius:10px;overflow:hidden;border:1px solid var(--border);margin:12px 0 6px}
+.aw{padding:14px 10px;text-align:center}.aw:not(:last-child){border-right:1px solid var(--border)}
+.aw-stage{font-size:13px;font-weight:500;margin-bottom:4px}.aw-desc{font-size:12px;color:#777;line-height:1.3}
+.a1{background:var(--purple-light)}.a1 .aw-stage{color:var(--purple-dark)}.a2{background:var(--blue-light)}.a2 .aw-stage{color:#0C447C}.a3{background:var(--teal-light)}.a3 .aw-stage{color:var(--teal-dark)}.a4{background:#FDF5E6}.a4 .aw-stage{color:#7a5212}.a5{background:#FAECE7}.a5 .aw-stage{color:#712B13}
+.motion-bar{display:grid;grid-template-columns:3fr 2fr;gap:0;border-radius:6px;overflow:hidden;font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase}
+.mb-create{background:var(--purple-light);color:var(--purple-dark);padding:5px 12px;text-align:center}.mb-capture{background:var(--teal-light);color:var(--teal-dark);padding:5px 12px;text-align:center}
+.insight{padding:14px 18px;border-left:3px solid var(--text);font-size:14px;color:#555;line-height:1.7;margin:16px 0}.insight b{color:var(--text);font-weight:500}
+.motion-cols{display:grid;grid-template-columns:1fr 40px 1fr;gap:0;margin:16px 0}
+.mot{border-radius:10px;padding:16px}.mot-create{background:var(--purple-light);border:1px solid var(--purple-mid)}.mot-capture{background:var(--teal-light);border:1px solid var(--teal-mid)}
+.mot h3{font-size:18px;font-weight:500;margin-bottom:2px}.mot .mot-sub{font-size:13px;line-height:1.5;margin-bottom:12px}
+.mot-create h3{color:var(--purple-dark)}.mot-create .mot-sub{color:#5e54b8}.mot-capture h3{color:var(--teal-dark)}.mot-capture .mot-sub{color:#1a8062}
+.tactic{padding:8px 10px;background:#fff;border:1px solid var(--border);border-radius:6px;margin-bottom:5px}.tactic .t-ttl{font-size:13px;font-weight:500}.tactic .t-desc{font-size:12px;color:var(--text-3);line-height:1.4;margin-top:2px}
+.mid{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}.mid-line{width:1px;flex:1;background:#ddd}.mid-dot{width:7px;height:7px;border-radius:50%;background:#bbb}
+.icp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+.icp{padding:14px;border:1px solid var(--border);border-radius:8px}.icp-tier{font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.t1 .icp-tier{color:var(--purple-dark)}.t2 .icp-tier{color:#0C447C}.t3 .icp-tier{color:var(--teal-dark)}
+.icp-name{font-size:16px;font-weight:500;margin-bottom:4px}.icp-detail{font-size:13px;color:var(--text-3);line-height:1.5}
+.icp-approach{font-size:12px;color:var(--text-4);margin-top:6px;padding-top:6px;border-top:1px solid var(--border-light)}
+.persona-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:12px 0}
+.persona{padding:10px;border:1px solid var(--border);border-radius:8px}.p-role{font-size:14px;font-weight:500}.p-title{font-size:12px;color:var(--text-4);margin-bottom:6px}
+.p-motion{display:inline-block;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;margin-bottom:4px}
+.p-motion.creation{background:var(--purple-light);color:var(--purple-dark)}.p-motion.capture{background:var(--teal-light);color:var(--teal-dark)}.p-motion.both{background:var(--blue-light);color:#0C447C}
+.p-desc{font-size:12px;color:var(--text-3);line-height:1.4;margin-top:4px}
+.strat-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px}
+.strat-table th{background:var(--text);color:#fff;padding:10px 12px;text-align:left;font-weight:500;font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+.strat-table td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.5;color:var(--text-2)}
+.strat-table tr:nth-child(even) td{background:var(--bg-2)}.strat-table .obj{font-weight:500;color:var(--text)}
+.next-page{display:block;margin:40px 0 20px;padding:20px 24px;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);transition:all .2s}
+.next-page:hover{border-color:var(--purple);box-shadow:0 4px 20px rgba(125,42,231,.08)}
+.next-page .np-label{font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--text-4);margin-bottom:4px}
+.next-page .np-title{font-size:19px;font-weight:500}.next-page .np-arrow{float:right;font-size:24px;color:var(--purple);margin-top:8px}
+footer{padding:32px 0;margin-top:20px;border-top:1px solid var(--border);font-size:13px;color:var(--text-4);text-align:center}footer b{color:var(--text-3);font-weight:500}
+</style>
+</head>
+<body>
+<nav><div class="nav-inner"><div class="nav-name">Jason Singh · <span>Canva</span></div><ul><li><a href="framework.html">Framework</a></li><li><a href="plan.html">Plan on a page</a></li><li><a href="strategy.html" class="active">Strategy</a></li><li><a href="resume.html">Resume</a></li></ul></div></nav>
+<main>
+<div class="hero"><div class="hero-eyebrow">Part three</div><h1>Canva field marketing — detailed strategy</h1><p class="hero-sub">The framework applied to Canva's specific enterprise opportunity, with market context, Canva-specific programs, ICP segmentation, and buying committee analysis.</p></div>
+
+<div class="section">
+<div class="sec-num">The opportunity</div>
+<div class="sec-title">Canva's enterprise inflection point</div>
+<p class="sec-desc">Canva has achieved what most enterprise companies spend years trying to build: ubiquitous product adoption. With 260M+ monthly active users and 95% Fortune 500 penetration, the consumer flywheel is proven. The challenge now is converting bottom-up adoption into top-down enterprise contracts.</p>
+<p style="margin-top:12px">Recent moves confirm the enterprise bet: the EY-Canva Alliance for agentic AI in sales workflows, acquisitions of Cavalry (motion graphics) and MangoAI (AI video), the launch of Canva Business bridging Pro and Enterprise tiers, and the Creative OS positioning with the Canva Design Model. The enterprise narrative is shifting from "easy design" to "AI-powered visual communication platform." Field marketing needs to carry that narrative into every enterprise conversation.</p>
+</div>
+
+<div class="section">
+<div class="sec-num">Canva-specific awareness model</div>
+<div class="sec-title">Where Canva's enterprise buyers sit today</div>
+<div class="awareness">
+<div class="aw a1"><div class="aw-stage">Unaware</div><div class="aw-desc">"We outsource all creative work to agencies"</div></div>
+<div class="aw a2"><div class="aw-stage">Problem aware</div><div class="aw-desc">"Agency costs are unsustainable at scale"</div></div>
+<div class="aw a3"><div class="aw-stage">Solution aware</div><div class="aw-desc">"We need to in-house visual content"</div></div>
+<div class="aw a4"><div class="aw-stage">Product aware</div><div class="aw-desc">"Canva could work for our organisation"</div></div>
+<div class="aw a5"><div class="aw-stage">Most aware</div><div class="aw-desc">"We need Canva Enterprise"</div></div>
+</div>
+<div class="motion-bar"><div class="mb-create">← Demand creation</div><div class="mb-capture">Demand capture →</div></div>
+<div class="insight" style="margin-top:12px"><b>Canva's unique advantage:</b> Most PLG companies over-index on demand capture because product usage naturally generates intent signals. But the $100K–$1M enterprise deals require demand creation — the CIO doesn't know she needs an enterprise visual communication platform. Field marketing is how you make her realise she does.</div>
+</div>
+
+<div class="section">
+<div class="sec-num">Canva-specific programs</div>
+<div class="sec-title">Field programs mapped to Canva's enterprise motion</div>
+<div class="motion-cols">
+<div class="mot mot-create"><h3>Demand creation</h3><div class="mot-sub">Reposition Canva from "design tool" to "enterprise visual communication platform"</div>
+<div class="tactic"><div class="t-ttl">Executive hospitality</div><div class="t-desc">F1, CXO dinners, roundtables — deep relationship building with Fortune 500 buyers</div></div>
+<div class="tactic"><div class="t-ttl">Thought leadership</div><div class="t-desc">Gartner, Forrester, BCG — analyst validation positioning Canva alongside Adobe and Microsoft</div></div>
+<div class="tactic"><div class="t-ttl">Category-defining events</div><div class="t-desc">Canva Create, "State of Visual Communication" report — own the enterprise narrative</div></div>
+<div class="tactic"><div class="t-ttl">Customer storytelling</div><div class="t-desc">Enterprise reference program — FedEx, Docusign, Salesforce peer-led roundtables</div></div>
+</div>
+<div class="mid"><div class="mid-line"></div><div class="mid-dot"></div><div class="mid-line"></div></div>
+<div class="mot mot-capture"><h3>Demand capture</h3><div class="mot-sub">Convert existing Canva users and in-market buyers into enterprise deals</div>
+<div class="tactic"><div class="t-ttl">PLG-signal ABM</div><div class="t-desc">50+ active users, growing domain adoption — trigger personalised field programs</div></div>
+<div class="tactic"><div class="t-ttl">Trade shows and conferences</div><div class="t-desc">SaaStr, Dreamforce, Gartner Symposium — live creation studios and enterprise demos</div></div>
+<div class="tactic"><div class="t-ttl">EY-Canva Alliance co-marketing</div><div class="t-desc">Joint events leveraging the agentic AI sales orchestration partnership</div></div>
+<div class="tactic"><div class="t-ttl">Customer references for closure</div><div class="t-desc">Connect prospects in active deal cycles with existing enterprise customers</div></div>
+</div></div></div>
+
+<div class="section">
+<div class="sec-num">Canva ICP tiers</div>
+<div class="sec-title">Account segmentation with PLG signals</div>
+<p class="sec-desc">95% of Fortune 500 already use Canva. The ICP isn't about finding new logos — it's about which accounts have the highest enterprise conversion propensity.</p>
+<div class="icp-grid">
+<div class="icp t1"><div class="icp-tier">Tier 1 — Strategic enterprise</div><div class="icp-name">10,000+ employees · $1B+ revenue</div><div class="icp-detail">Multi-national. Complex brand governance. Named account plans co-built with Sales.</div><div class="icp-approach">PLG: 200+ users across 5+ depts · ACV: $250K–$1M+ · Field: 1:1</div></div>
+<div class="icp t2"><div class="icp-tier">Tier 2 — Growth enterprise</div><div class="icp-name">1,000–10,000 employees</div><div class="icp-detail">Fast-scaling. Hitting collaboration friction. Users hitting Pro limits.</div><div class="icp-approach">PLG: 50–200 users in marketing/sales · ACV: $50K–$250K · Field: 1:few</div></div>
+<div class="icp t3"><div class="icp-tier">Tier 3 — Commercial mid-market</div><div class="icp-name">200–1,000 employees</div><div class="icp-detail">Canva Business candidates. Franchise models, startups.</div><div class="icp-approach">PLG: 10–50 users, high velocity · ACV: $10K–$50K · Field: 1:many</div></div>
+</div></div>
+
+<div class="section">
+<div class="sec-num">Canva buying committee</div>
+<div class="sec-title">Persona × motion mapping</div>
+<div class="persona-grid">
+<div class="persona"><div class="p-motion capture">Capture</div><div class="p-role">Champion</div><div class="p-title">Brand / creative director</div><div class="p-desc">Already uses Canva. Needs enterprise features, brand governance, team scale.</div></div>
+<div class="persona"><div class="p-motion creation">Creation</div><div class="p-role">Gatekeeper</div><div class="p-title">CIO / CISO</div><div class="p-desc">Doesn't know Canva is enterprise-grade. Needs security, SSO, compliance.</div></div>
+<div class="persona"><div class="p-motion both">Creation → capture</div><div class="p-role">Business buyer</div><div class="p-title">CMO</div><div class="p-desc">Knows Canva as consumer. Needs repositioning to enterprise visual OS.</div></div>
+<div class="persona"><div class="p-motion creation">Creation</div><div class="p-role">Line of business head</div><div class="p-title">VP Sales, CHRO, VP Comms</div><div class="p-desc">Outsourced creative to agencies. Wants to in-house — doesn't yet see Canva as the answer.</div></div>
+<div class="persona"><div class="p-motion capture">Capture</div><div class="p-role">Rationaliser</div><div class="p-title">Procurement</div><div class="p-desc">Consolidating SaaS spend. Needs TCO and Forrester TEI data.</div></div>
+</div></div>
+
+<div class="section">
+<div class="sec-num">Detailed growth pillars</div>
+<div class="sec-title">Programs, tactics, KPIs, and budget allocation</div>
+<table class="strat-table">
+<thead><tr><th>Objective</th><th>Strategic priorities</th><th>Tactics</th><th>KPIs</th><th>Budget</th></tr></thead>
+<tbody>
+<tr><td class="obj" rowspan="4">Generate enterprise pipeline</td><td rowspan="4">ABM, tentpole events, sponsorships, sales-aligned campaign design</td><td>Sponsor 8–12 industry events (SaaStr, Dreamforce, Gartner Symposium, Web Summit) with speaking slots, executive meetings, and booth activations</td><td rowspan="4">Pipeline generated, cost-per-opportunity, event-to-SQO conversion</td><td rowspan="4">40%</td></tr>
+<tr><td>Multi-touch ABM across 200–300 target accounts — direct mail, executive dinners, personalised content, digital retargeting</td></tr>
+<tr><td>Quarterly executive hospitality — CXO dinners, roundtables, premium experiences. 15–20 events annually</td></tr>
+<tr><td>Integrated digital + field — paid social, SEM, content syndication around major field moments</td></tr>
+<tr><td class="obj" rowspan="3">Build enterprise credibility</td><td rowspan="3">Thought leadership, analyst relations, customer evidence</td><td>Joint content with Gartner and Forrester — TEI reports. Leverage EY-Canva Alliance</td><td rowspan="3">Analyst coverage, media mentions, customer references, perception shift</td><td rowspan="3">20%</td></tr>
+<tr><td>Customer evidence engine — 12+ enterprise case studies in year 1</td></tr>
+<tr><td>Enterprise narrative with Product Marketing — Creative OS, AI workflow, brand governance for C-suite</td></tr>
+<tr><td class="obj" rowspan="3">Scale regional execution</td><td rowspan="3">Regional activation, team development</td><td>NA: primary counterpart to Sales, co-owned pipeline targets, bi-weekly reviews</td><td rowspan="3">Regional pipeline, sales satisfaction, program velocity</td><td rowspan="3">25%</td></tr>
+<tr><td>EMEA/APAC: playbooks and frameworks for regional marketers to localise</td></tr>
+<tr><td>Partner co-marketing — tiering model, co-branded events with technology partners</td></tr>
+<tr><td class="obj" rowspan="2">Build measurement</td><td rowspan="2">Attribution, budget governance</td><td>Multi-touch attribution connecting event registration → engagement → pipeline → revenue</td><td rowspan="2">Attribution operational, benchmarks set</td><td rowspan="2">15%</td></tr>
+<tr><td>Monthly budget reviews, quarterly business reviews with CMO and Sales. Kill underperformers in one quarter</td></tr>
+</tbody></table></div>
+
+<div class="section" style="border:none">
+<div class="sec-num">Why me</div>
+<div class="sec-title">I have built this function before — five times</div>
+<p>At Meta, I own $80M+ in global enterprise pipeline across field, ABM, partner, and event programs with a team aligned to regional Sales leadership — in exactly the model Canva is building. I have taken marketing-sourced pipeline from 0% to 42% in APAC, scaled partner co-marketing from 6 to 24 partners globally, designed a Formula 1 Hospitality Program generating $46M in pipeline with Fortune 500 companies, and built customer reference programs that closed 42 accounts.</p>
+<p style="margin-top:12px">I manage ~$15M in field budgets with full-funnel attribution from event activation through to closed revenue. I understand the PLG-to-enterprise transition intimately, and I know how to build field marketing that earns the trust of Sales leadership by proving its impact on revenue.</p>
+</div>
+
+<a href="resume.html" class="next-page"><span class="np-arrow">→</span><div class="np-label">Next</div><div class="np-title">Resume</div></a>
+</main>
+<footer><b>Jason Singh</b> · jasonsingh826@gmail.com · linkedin.com/in/jasonsingh1 · April 2026</footer>
+</body>
+</html>

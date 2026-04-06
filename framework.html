@@ -15,3 +15,205 @@ nav ul{list-style:none;display:flex;gap:6px}
 nav a{font-size:11px;font-weight:500;color:var(--text-3);text-decoration:none;padding:6px 12px;border-radius:6px;transition:all .2s}
 nav a:hover,nav a.active{background:var(--purple-light);color:var(--purple-dark)}
 main{max-width:960px;margin:0 auto;padding:0 40px}
+.hero{padding:48px 0 32px;border-bottom:1px solid var(--border)}
+.hero-eyebrow{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--purple);margin-bottom:8px}
+.hero h1{font-family:'DM Serif Display',serif;font-size:32px;font-weight:400;line-height:1.2;margin-bottom:10px}
+.hero-sub{font-size:14px;color:var(--text-3);line-height:1.7;max-width:700px}
+.section{padding:40px 0 32px;border-bottom:1px solid var(--border-light)}
+.section:last-child{border:none}
+.sec-num{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--text-4);margin-bottom:6px}
+.sec-title{font-size:20px;font-weight:500;margin-bottom:6px}
+.sec-desc{font-size:13px;color:var(--text-3);line-height:1.7;margin-bottom:16px;max-width:700px}
+h3{font-size:14px;font-weight:500;margin-bottom:6px}
+p{font-size:13px;color:var(--text-2);line-height:1.7}
+.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.problem{padding:14px 16px;border-left:3px solid #d44;border-radius:0 8px 8px 0;background:#fdf5f5}
+.problem .pr-ttl{font-size:12px;font-weight:500;color:#a33;margin-bottom:4px}
+.problem .pr-desc{font-size:11px;color:var(--text-3);line-height:1.5}
+.era-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-radius:10px;overflow:hidden;border:1px solid var(--border);margin:16px 0}
+.era{padding:16px 14px}.era:not(:last-child){border-right:1px solid var(--border)}
+.era-label{font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.era-title{font-size:13px;font-weight:500;margin-bottom:6px}
+.era-desc{font-size:11px;color:var(--text-3);line-height:1.5}
+.era-list{list-style:none;padding:0;margin-top:8px}
+.era-list li{font-size:11px;color:#555;padding:2px 0;line-height:1.4}.era-list li::before{content:"→ ";color:#ccc}
+.e1{background:#f8f7ff}.e1 .era-label{color:var(--purple)}
+.e2{background:#f0f7fd}.e2 .era-label{color:var(--blue)}
+.e3{background:#eef8f4}.e3 .era-label{color:var(--teal-dark)}
+.thesis{padding:20px 24px;background:var(--text);color:#fff;border-radius:10px;margin:20px 0}
+.thesis p{color:#ccc;font-size:13px;line-height:1.7}.thesis b{color:#fff;font-weight:500}
+.awareness{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-radius:10px;overflow:hidden;border:1px solid var(--border);margin:12px 0 6px}
+.aw{padding:14px 10px;text-align:center}.aw:not(:last-child){border-right:1px solid var(--border)}
+.aw-stage{font-size:11px;font-weight:500;margin-bottom:4px}.aw-desc{font-size:10px;color:#777;line-height:1.3}
+.a1{background:var(--purple-light)}.a1 .aw-stage{color:var(--purple-dark)}
+.a2{background:var(--blue-light)}.a2 .aw-stage{color:#0C447C}
+.a3{background:var(--teal-light)}.a3 .aw-stage{color:var(--teal-dark)}
+.a4{background:#FDF5E6}.a4 .aw-stage{color:#7a5212}
+.a5{background:#FAECE7}.a5 .aw-stage{color:#712B13}
+.motion-bar{display:grid;grid-template-columns:3fr 2fr;gap:0;border-radius:6px;overflow:hidden;font-size:9px;font-weight:500;letter-spacing:.08em;text-transform:uppercase}
+.mb-create{background:var(--purple-light);color:var(--purple-dark);padding:5px 12px;text-align:center}
+.mb-capture{background:var(--teal-light);color:var(--teal-dark);padding:5px 12px;text-align:center}
+.motion-cols{display:grid;grid-template-columns:1fr 40px 1fr;gap:0;margin:16px 0}
+.mot{border-radius:10px;padding:16px}
+.mot-create{background:var(--purple-light);border:1px solid var(--purple-mid)}
+.mot-capture{background:var(--teal-light);border:1px solid var(--teal-mid)}
+.mot h3{font-size:15px;font-weight:500;margin-bottom:2px}.mot .mot-sub{font-size:11px;line-height:1.5;margin-bottom:12px}
+.mot-create h3{color:var(--purple-dark)}.mot-create .mot-sub{color:#5e54b8}
+.mot-capture h3{color:var(--teal-dark)}.mot-capture .mot-sub{color:#1a8062}
+.tactic{padding:8px 10px;background:#fff;border:1px solid var(--border);border-radius:6px;margin-bottom:5px}
+.tactic .t-ttl{font-size:11px;font-weight:500}.tactic .t-desc{font-size:10px;color:var(--text-3);line-height:1.4;margin-top:2px}
+.mid{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.mid-line{width:1px;flex:1;background:#ddd}.mid-dot{width:7px;height:7px;border-radius:50%;background:#bbb}
+.icp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+.icp{padding:14px;border:1px solid var(--border);border-radius:8px}
+.icp-tier{font-size:10px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.t1 .icp-tier{color:var(--purple-dark)}.t2 .icp-tier{color:#0C447C}.t3 .icp-tier{color:var(--teal-dark)}
+.icp-name{font-size:13px;font-weight:500;margin-bottom:4px}.icp-detail{font-size:11px;color:var(--text-3);line-height:1.5}
+.icp-approach{font-size:10px;color:var(--text-4);margin-top:6px;padding-top:6px;border-top:1px solid var(--border-light)}
+.persona-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:12px 0}
+.persona{padding:10px;border:1px solid var(--border);border-radius:8px}
+.p-role{font-size:12px;font-weight:500}.p-title{font-size:10px;color:var(--text-4);margin-bottom:6px}
+.p-motion{display:inline-block;font-size:9px;font-weight:500;padding:2px 8px;border-radius:10px;margin-bottom:4px}
+.p-motion.creation{background:var(--purple-light);color:var(--purple-dark)}
+.p-motion.capture{background:var(--teal-light);color:var(--teal-dark)}
+.p-motion.both{background:var(--blue-light);color:#0C447C}
+.p-desc{font-size:10px;color:var(--text-3);line-height:1.4;margin-top:4px}
+.bridge{padding:16px;border:1px solid #ccc;border-radius:10px;background:var(--bg-2);margin:12px 0}
+.bridge-label{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--text-4);margin-bottom:8px}
+.bridge-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.b-item{padding:10px;border-radius:6px;border:1px solid var(--border);background:#fff}
+.b-item .b-ttl{font-size:11px;font-weight:500}.b-item .b-desc{font-size:10px;color:var(--text-3);line-height:1.4;margin-top:2px}
+.measure{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.m-col{padding:12px 14px;border-radius:8px}
+.m-create{background:var(--purple-light);border:1px solid var(--purple-mid)}
+.m-capture{background:var(--teal-light);border:1px solid var(--teal-mid)}
+.m-col .m-label{font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px}
+.m-create .m-label{color:var(--purple-dark)}.m-capture .m-label{color:var(--teal-dark)}
+.m-col ul{list-style:none;padding:0}.m-col li{font-size:11px;color:#555;padding:2px 0;line-height:1.4}
+.insight{padding:14px 18px;border-left:3px solid var(--text);font-size:12px;color:#555;line-height:1.7;margin:16px 0}.insight b{color:var(--text);font-weight:500}
+.next-page{display:block;margin:40px 0 20px;padding:20px 24px;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);transition:all .2s}
+.next-page:hover{border-color:var(--purple);box-shadow:0 4px 20px rgba(125,42,231,.08)}
+.next-page .np-label{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--text-4);margin-bottom:4px}
+.next-page .np-title{font-size:16px;font-weight:500}
+.next-page .np-arrow{float:right;font-size:20px;color:var(--purple);margin-top:8px}
+footer{padding:32px 0;margin-top:20px;border-top:1px solid var(--border);font-size:11px;color:var(--text-4);text-align:center}footer b{color:var(--text-3);font-weight:500}
+</style>
+</head>
+<body>
+<nav><div class="nav-inner">
+<div class="nav-name">Jason Singh · <span>Canva</span></div>
+<ul>
+<li><a href="framework.html" class="active">Framework</a></li>
+<li><a href="plan.html">Plan on a page</a></li>
+<li><a href="strategy.html">Strategy</a></li>
+<li><a href="resume.html">Resume</a></li>
+</ul>
+</div></nav>
+<main>
+<div class="hero">
+<div class="hero-eyebrow">Part one</div>
+<h1>The integrated field marketing framework</h1>
+<p class="hero-sub">A company-agnostic framework for building B2B field marketing functions that generate measurable pipeline. Developed across 15 years building field marketing from zero at five companies across global enterprise markets.</p>
+</div>
+
+<div class="section">
+<div class="sec-num">01 — The problem</div>
+<div class="sec-title">Most B2B marketing organisations are still operating on a model designed for a different era</div>
+<p class="sec-desc">B2B marketing has fundamentally changed over the past 15 years, but most organisations haven't updated their operating model. They're running demand generation playbooks built for a world where buyers followed a linear funnel, sales controlled information, and marketing's job was to fill the top. That world no longer exists.</p>
+<div class="problem-grid">
+<div class="problem"><div class="pr-ttl">Over-indexing on demand capture</div><div class="pr-desc">Most B2B teams pour budget into capturing existing intent (paid search, trade shows, gated content) while doing almost nothing to create new demand. They're fishing in a shrinking pond.</div></div>
+<div class="problem"><div class="pr-ttl">Marketing and Sales misalignment</div><div class="pr-desc">Marketing measures MQLs. Sales measures revenue. Neither owns the pipeline in between. Field programs get planned in isolation from deal cycles.</div></div>
+<div class="problem"><div class="pr-ttl">Attribution theatre</div><div class="pr-desc">Last-touch attribution rewards capture programs and makes creation programs invisible. Marketing cuts the activities that build future pipeline because they can't "prove" they worked in 30 days.</div></div>
+<div class="problem"><div class="pr-ttl">One-size-fits-all programs</div><div class="pr-desc">The same webinar gets sent to a CIO and a marketing coordinator. Different buyers at different stages need fundamentally different programs.</div></div>
+</div></div>
+
+<div class="section">
+<div class="sec-num">02 — How B2B marketing has changed</div>
+<div class="sec-title">Three eras of B2B go-to-market</div>
+<div class="era-grid">
+<div class="era e1"><div class="era-label">2008–2015 · The lead gen era</div><div class="era-title">Fill the funnel, let Sales sort it out</div><div class="era-desc">Marketing existed to generate volume. Success was measured by MQL count.</div><ul class="era-list"><li>Buyers depended on sales reps for information</li><li>Linear funnel: awareness → interest → decision</li><li>Marketing measured by volume (MQLs)</li><li>Events = lead capture machines</li></ul></div>
+<div class="era e2"><div class="era-label">2015–2021 · The ABM era</div><div class="era-title">Target the right accounts, align with Sales</div><div class="era-desc">ABM replaced spray-and-pray. But it was still fundamentally a capture motion.</div><ul class="era-list"><li>Buyers self-educated before talking to sales</li><li>Account-based replaced lead-based</li><li>Marketing measured by pipeline influence</li><li>Events = relationship accelerators</li></ul></div>
+<div class="era e3"><div class="era-label">2021–now · The creation era</div><div class="era-title">Build the market, then capture it</div><div class="era-desc">The best companies realised most of their TAM isn't in-market at any given time.</div><ul class="era-list"><li>Buyers complete 70%+ of journey before engaging sales</li><li>Dark social and peer influence drive decisions</li><li>Marketing measured by pipeline sourced + revenue</li><li>Events = category-defining experiences</li></ul></div>
+</div>
+<div class="thesis"><p><b>The thesis:</b> Field marketing is the only function that can operate across both demand creation and demand capture — because it sits at the intersection of Sales, Product Marketing, and the customer. But to do this effectively, you need an integrated framework that connects buyer awareness, program design, account segmentation, persona targeting, and measurement into a single system.</p></div>
+</div>
+
+<div class="section">
+<div class="sec-num">03 — Buyer awareness stages</div>
+<div class="sec-title">Where accounts sit determines which motion to run</div>
+<p class="sec-desc">Adapted from Eugene Schwartz's awareness model. Demand creation moves buyers through the left three stages. Demand capture converts the right two.</p>
+<div class="awareness">
+<div class="aw a1"><div class="aw-stage">Unaware</div><div class="aw-desc">"We outsource all this — it's not our problem"</div></div>
+<div class="aw a2"><div class="aw-stage">Problem aware</div><div class="aw-desc">"This is getting expensive and slow"</div></div>
+<div class="aw a3"><div class="aw-stage">Solution aware</div><div class="aw-desc">"We need to bring this in-house"</div></div>
+<div class="aw a4"><div class="aw-stage">Product aware</div><div class="aw-desc">"This product could solve it"</div></div>
+<div class="aw a5"><div class="aw-stage">Most aware</div><div class="aw-desc">"We need to buy this"</div></div>
+</div>
+<div class="motion-bar"><div class="mb-create">← Demand creation</div><div class="mb-capture">Demand capture →</div></div>
+</div>
+
+<div class="section">
+<div class="sec-num">04 — Demand creation × demand capture</div>
+<div class="sec-title">Two fundamentally different motions, different tactics, different measurement</div>
+<p class="sec-desc">Inspired by Chris Walker's framework at Refine Labs. These are not two ends of a spectrum — they are two different jobs with different timelines and different ways of proving impact.</p>
+<div class="motion-cols">
+<div class="mot mot-create"><h3>Demand creation</h3><div class="mot-sub">Change what buyers believe. Create future pipeline by shaping how the market thinks — before they enter a buying cycle.</div>
+<div class="tactic"><div class="t-ttl">Executive engagement</div><div class="t-desc">Intimate experiences that reposition the brand with senior decision-makers</div></div>
+<div class="tactic"><div class="t-ttl">Thought leadership</div><div class="t-desc">Analyst partnerships and co-authored research that builds enterprise credibility</div></div>
+<div class="tactic"><div class="t-ttl">Customer storytelling</div><div class="t-desc">Peer-led events that create social proof through authentic customer voices</div></div>
+<div class="tactic"><div class="t-ttl">Category-defining events</div><div class="t-desc">Owned events that establish the company as the category leader</div></div>
+</div>
+<div class="mid"><div class="mid-line"></div><div class="mid-dot"></div><div class="mid-line"></div></div>
+<div class="mot mot-capture"><h3>Demand capture</h3><div class="mot-sub">Convert existing intent. Intercept buyers already in-market, already evaluating, or already using the product.</div>
+<div class="tactic"><div class="t-ttl">Account-based marketing</div><div class="t-desc">Multi-touch campaigns targeting named accounts with personalised outreach</div></div>
+<div class="tactic"><div class="t-ttl">Industry events and trade shows</div><div class="t-desc">Sponsorships with speaking slots, demos, and executive meetings</div></div>
+<div class="tactic"><div class="t-ttl">Partner co-marketing</div><div class="t-desc">Joint campaigns with strategic partners to capture referred demand</div></div>
+<div class="tactic"><div class="t-ttl">Customer reference programs</div><div class="t-desc">Connecting prospects with customers to validate and accelerate procurement</div></div>
+</div></div></div>
+
+<div class="section">
+<div class="sec-num">05 — ICP tiering</div>
+<div class="sec-title">Account segmentation determines field investment level</div>
+<div class="icp-grid">
+<div class="icp t1"><div class="icp-tier">Tier 1 — Strategic</div><div class="icp-name">Largest, highest-value accounts</div><div class="icp-detail">Complex buying committees, long sales cycles. Justify dedicated field resources.</div><div class="icp-approach">1:1 · Named account plans · Executive engagement · Custom programs</div></div>
+<div class="icp t2"><div class="icp-tier">Tier 2 — Growth</div><div class="icp-name">Fast-scaling mid-enterprise</div><div class="icp-detail">Ready for enterprise solutions but need education and validation.</div><div class="icp-approach">1:few · Regional roadshows · Industry roundtables · Vertical campaigns</div></div>
+<div class="icp t3"><div class="icp-tier">Tier 3 — Commercial</div><div class="icp-name">High-velocity mid-market</div><div class="icp-detail">Shorter sales cycles, high volume. Field supports scaled and digital motions.</div><div class="icp-approach">1:many · Virtual workshops · Webinars · Self-serve acceleration</div></div>
+</div></div>
+
+<div class="section">
+<div class="sec-num">06 — Buying committee personas</div>
+<div class="sec-title">Different personas require different motions and different measurement</div>
+<div class="persona-grid">
+<div class="persona"><div class="p-motion capture">Capture</div><div class="p-role">Champion</div><div class="p-title">Functional user / team lead</div><div class="p-desc">Already uses the product. Needs enterprise features to make the case internally.</div></div>
+<div class="persona"><div class="p-motion creation">Creation</div><div class="p-role">Gatekeeper</div><div class="p-title">CIO / CISO</div><div class="p-desc">Doesn't know the product is enterprise-grade. Needs security and compliance validation.</div></div>
+<div class="persona"><div class="p-motion both">Creation → capture</div><div class="p-role">Business buyer</div><div class="p-title">CMO / VP</div><div class="p-desc">Knows the product in a consumer context. Needs repositioning to enterprise value.</div></div>
+<div class="persona"><div class="p-motion creation">Creation</div><div class="p-role">Line of business head</div><div class="p-title">Dept VPs (Sales, HR, Comms)</div><div class="p-desc">Outsources creative to agencies. Wants to in-house but doesn't yet see the product as the answer.</div></div>
+<div class="persona"><div class="p-motion capture">Capture</div><div class="p-role">Rationaliser</div><div class="p-title">Procurement</div><div class="p-desc">Consolidating SaaS spend. Needs TCO comparison and analyst validation.</div></div>
+</div>
+<div class="insight"><b>The rule:</b> Executive dinners reach gatekeepers and line of business heads (creation). Workshops and demos reach champions and rationalisers (capture). A field program portfolio must deliberately cover the full buying committee.</div>
+</div>
+
+<div class="section">
+<div class="sec-num">07 — The operating system</div>
+<div class="sec-title">Three mechanisms that connect the framework into a live system</div>
+<div class="bridge"><div class="bridge-grid">
+<div class="b-item"><div class="b-ttl">Pipeline council with Sales</div><div class="b-desc">Weekly reviews to align field programs with active pipeline, account stage, and persona engagement.</div></div>
+<div class="b-item"><div class="b-ttl">Product data → field signals</div><div class="b-desc">Usage data triggers the right field program for the right account at the right awareness stage.</div></div>
+<div class="b-item"><div class="b-ttl">Closed-loop attribution</div><div class="b-desc">Self-reported for creation, software-attributed for capture — each motion measured on its own terms.</div></div>
+</div></div></div>
+
+<div class="section">
+<div class="sec-num">08 — Measurement by motion</div>
+<div class="sec-title">The single biggest mistake: measuring creation and capture the same way</div>
+<div class="measure">
+<div class="m-col m-create"><div class="m-label">Demand creation</div><ul><li>Brand perception shift among target accounts</li><li>Executive engagement depth and frequency</li><li>Analyst coverage and category positioning</li><li>Self-reported attribution</li><li>Approved vendor list additions (long-cycle)</li></ul></div>
+<div class="m-col m-capture"><div class="m-label">Demand capture</div><ul><li>Pipeline generated and influenced</li><li>Event-to-SQO conversion rate</li><li>Cost-per-opportunity by program type</li><li>Software-attributed pipeline and revenue</li><li>Deal velocity acceleration from field touches</li></ul></div>
+</div>
+<div class="insight"><b>How the framework connects:</b> The buyer awareness model tells you where an account sits. Demand creation and capture tell you which motion to run. ICP tiers determine investment level. Persona mapping determines which programs reach which members of the buying committee. Product data is the connective tissue. And the measurement system ensures you're evaluating each motion on its own terms.</div>
+</div>
+
+<a href="plan.html" class="next-page"><span class="np-arrow">→</span><div class="np-label">Next</div><div class="np-title">Canva field marketing — plan on a page</div></a>
+</main>
+<footer><b>Jason Singh</b> · jasonsingh826@gmail.com · linkedin.com/in/jasonsingh1 · April 2026</footer>
+</body>
+</html>

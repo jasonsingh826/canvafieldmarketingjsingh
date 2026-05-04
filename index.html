@@ -61,7 +61,33 @@ h1 { font-weight: 800; font-size: 60px; line-height: 1.0; letter-spacing: -0.035
 .site-footer .name { font-weight: 600; color: #0E0E0E; }
 .site-footer .meta { color: #5C5C5C; font-weight: 400; }
 .site-footer .meta a:hover { color: #7C3AED; }
-@media (max-width: 700px) { h1 { font-size: 44px; } .toc-grid { grid-template-columns: 1fr; } nav .links { display: none; } }
+.committee-disclaimer { background: #FFF4DC; border: 1px solid #FCE6B8; border-radius: 10px; padding: 12px 14px; font-size: 14px; color: #0E0E0E; line-height: 1.6; margin-bottom: 14px; }
+.committee-disclaimer strong { color: #8B5A00; }
+.committee-list { border: 1px solid #ECEAE5; border-radius: 12px; padding: 4px 0; margin-bottom: 14px; background: #fff; }
+.committee-row { display: grid; grid-template-columns: 220px 1fr 200px; gap: 16px; padding: 14px 18px; border-bottom: 1px dashed #ECEAE5; align-items: center; }
+.committee-row:last-child { border-bottom: none; }
+.committee-row .company { font-size: 16px; font-weight: 700; color: #0E0E0E; }
+.committee-row .role { font-size: 14px; color: #5C5C5C; line-height: 1.45; }
+.committee-row .trigger { font-size: 14px; color: #444; line-height: 1.5; font-style: italic; }
+.committee-row .pill-wrap { display: flex; justify-content: flex-end; align-items: flex-start; }
+.committee-row .pill { display: inline-block; font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 100px; letter-spacing: 0.02em; }
+.pill.violet { background: #F4EEFF; color: #5B21B6; border: 1px solid #E8DEFF; }
+.pill.teal { background: #E0F7F8; color: #0F6E72; border: 1px solid #C8EEEF; }
+.pill.coral { background: #FFE9E2; color: #A8421F; border: 1px solid #FFD3C5; }
+.pill.amber { background: #FFF4DC; color: #8B5A00; border: 1px solid #FCE6B8; }
+.pill.pink { background: #FBEAF0; color: #A02860; border: 1px solid #F2C8D9; }
+.legend { display: flex; flex-wrap: wrap; gap: 12px; padding: 4px 4px 12px 4px; }
+.legend .item { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: #5C5C5C; }
+.legend .swatch { width: 12px; height: 12px; border-radius: 3px; }
+.framework-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 8px; }
+.framework-card { border: 1px solid #ECEAE5; border-radius: 10px; padding: 14px 16px; background: #fff; }
+.framework-card .tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #5B21B6; background: #F4EEFF; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; }
+.framework-card .author { font-size: 14px; font-weight: 700; color: #0E0E0E; margin-bottom: 2px; }
+.framework-card .work { font-size: 14px; color: #5C5C5C; font-style: italic; margin-bottom: 6px; line-height: 1.45; }
+.framework-card p { font-size: 14px; color: #444; line-height: 1.55; }
+.resource-group-label { font-size: 14px; font-weight: 600; color: #5B21B6; letter-spacing: 0.1em; text-transform: uppercase; margin: 22px 0 10px 0; padding-bottom: 6px; border-bottom: 1px solid #E8DEFF; }
+.resource-group-label:first-of-type { margin-top: 6px; }
+@media (max-width: 700px) { h1 { font-size: 44px; } .toc-grid { grid-template-columns: 1fr; } nav .links { display: none; } .committee-row { grid-template-columns: 1fr; gap: 6px; padding: 12px 16px; } .committee-row .pill-wrap { justify-content: flex-start; } .framework-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -75,6 +101,7 @@ h1 { font-weight: 800; font-size: 60px; line-height: 1.0; letter-spacing: -0.035
       <a href="messaging.html">Messaging</a>
       <a href="plan-on-a-page.html">Plan</a>
       <a href="strategy.html">Strategy</a>
+      <a href="research.html">Research</a>
     </div>
   </div>
 </nav>
@@ -133,9 +160,177 @@ h1 { font-weight: 800; font-size: 60px; line-height: 1.0; letter-spacing: -0.035
 
   </div>
 
+  <section class="section-header">
+    <div class="small-eyebrow">The buyer in motion</div>
+    <h2>Eight enterprise targets, mapped to persona.</h2>
+    <p>An illustrative slice of the Canva enterprise pipeline — eight director-and-below buyers across recognizable accounts, mapped to the personas in the messaging system.</p>
+  </section>
+
+  <div class="committee-list" style="margin-top:16px">
+
+    <div class="committee-row">
+      <div class="company">DBS Bank</div>
+      <div class="role">Loyalty Performance Lead</div>
+      <div class="pill-wrap"><span class="pill violet">Force Multiplier</span></div>
+    </div>
+
+    <div class="committee-row">
+      <div class="company">Twilio</div>
+      <div class="role">Field Marketing Lead</div>
+      <div class="pill-wrap"><span class="pill violet">Force Multiplier</span></div>
+    </div>
+
+    <div class="committee-row">
+      <div class="company">SAP</div>
+      <div class="role">Director, Conversion Marketing</div>
+      <div class="pill-wrap"><span class="pill violet">Force Multiplier</span></div>
+    </div>
+
+    <div class="committee-row">
+      <div class="company">Telstra</div>
+      <div class="role">SMB Marketing Lead</div>
+      <div class="pill-wrap"><span class="pill teal">Brand Architect</span></div>
+    </div>
+
+    <div class="committee-row">
+      <div class="company">Harvey</div>
+      <div class="role">GTM Lead</div>
+      <div class="pill-wrap"><span class="pill coral">Mandate Carrier</span></div>
+    </div>
+
+    <div class="committee-row">
+      <div class="company">Okta</div>
+      <div class="role">Head of Strategic Marketing</div>
+      <div class="pill-wrap"><span class="pill coral">Mandate Carrier</span></div>
+    </div>
+
+    <div class="committee-row">
+      <div class="company">Penguin Random House</div>
+      <div class="role">MarTech Lead</div>
+      <div class="pill-wrap"><span class="pill pink">Commercial Pragmatist</span></div>
+    </div>
+
+    <div class="committee-row">
+      <div class="company">Spotify</div>
+      <div class="role">Growth Marketing Lead</div>
+      <div class="pill-wrap"><span class="pill violet">Force Multiplier</span></div>
+    </div>
+
+  </div>
+
+  <div class="legend">
+    <div class="item"><span class="swatch" style="background:#7C3AED"></span> Force Multiplier</div>
+    <div class="item"><span class="swatch" style="background:#07B9CE"></span> Brand Architect</div>
+    <div class="item"><span class="swatch" style="background:#FF7A66"></span> Mandate Carrier</div>
+    <div class="item"><span class="swatch" style="background:#D89200"></span> Risk Closer</div>
+    <div class="item"><span class="swatch" style="background:#E8438C"></span> Commercial Pragmatist</div>
+  </div>
+
   <div class="thesis">
     <div class="kicker">The thesis</div>
     <p>Field marketing is the only function that operates across both demand creation and demand capture — at the intersection of Sales, Product Marketing, and the customer.</p>
+  </div>
+
+  <section class="section-header">
+    <div class="small-eyebrow">Research diet</div>
+    <h2>Reading, listening, watching.</h2>
+    <p>Fourteen sources across analyst research, business press, podcasts, and industry events that shaped the thinking.</p>
+  </section>
+
+  <div class="resource-group-label">Canva industry coverage</div>
+  <div class="framework-grid">
+    <div class="framework-card">
+      <div class="tag">Event</div>
+      <div class="author">Canva Create 2025</div>
+      <div class="work">Visual Suite 2.0 reveal · Canva Design Model unveiled (April 2025)</div>
+      <p>Anchors the AI 2.0 platform proposition and the Creative OS narrative across the deck.</p>
+    </div>
+    <div class="framework-card">
+      <div class="tag">Article series</div>
+      <div class="author">Forbes</div>
+      <div class="work">Canva enterprise valuation, Adobe competitive dynamics, IPO speculation</div>
+      <p>External validation of the Adobe-displacement thesis driving the offboarding playbook.</p>
+    </div>
+    <div class="framework-card">
+      <div class="tag">Interview features</div>
+      <div class="author">Fortune</div>
+      <div class="work">Melanie Perkins and Cliff Obrecht on the enterprise pivot</div>
+      <p>Founder voice on the enterprise narrative — frames the Mandate Carrier persona and the AI 2.0 inflection point.</p>
+    </div>
+    <div class="framework-card">
+      <div class="tag">Article series</div>
+      <div class="author">Bloomberg</div>
+      <div class="work">Canva IPO speculation, AI strategy, $42B valuation coverage</div>
+      <p>Market context for the "what's at stake" framing in the closing thesis.</p>
+    </div>
+    <div class="framework-card">
+      <div class="tag">Article series</div>
+      <div class="author">TechCrunch</div>
+      <div class="work">Affinity unified app launch, 265M MAU year-end reporting, AI feature rollouts</div>
+      <p>Verification of Canva product and growth figures cited throughout the deck.</p>
+    </div>
+  </div>
+
+  <div class="resource-group-label">Analyst research</div>
+  <div class="framework-grid">
+    <div class="framework-card">
+      <div class="tag">Gartner report</div>
+      <div class="author">Gartner</div>
+      <div class="work">Predicts 2025 — Generative AI Disrupts B2B Marketing</div>
+      <p>Industry context for the AI mandate persona; informs the "AI noise problem" challenge in the strategy.</p>
+    </div>
+    <div class="framework-card">
+      <div class="tag">Forrester report</div>
+      <div class="author">Forrester Wave</div>
+      <div class="work">Account-Based Marketing Platforms, Q1 2025</div>
+      <p>Positioning of the ABM motion within growth pillars 01 and 03.</p>
+    </div>
+    <div class="framework-card">
+      <div class="tag">Annual report</div>
+      <div class="author">Bessemer Venture Partners</div>
+      <div class="work">State of the Cloud 2025</div>
+      <p>SaaS benchmarks and the AI-native company thesis — informs the Mandate Carrier profile and speed-to-market challenge.</p>
+    </div>
+  </div>
+
+  <div class="resource-group-label">B2B SaaS marketing thought leadership</div>
+  <div class="framework-grid">
+    <div class="framework-card">
+      <div class="tag">Podcast</div>
+      <div class="author">Refine Labs · State of Demand Gen</div>
+      <div class="work">Chris Walker on demand creation × demand capture</div>
+      <p>The framework that underpins the Two Motions section across the deck.</p>
+    </div>
+    <div class="framework-card">
+      <div class="tag">Industry report</div>
+      <div class="author">OpenView Partners</div>
+      <div class="work">2024 Product-Led Growth Index</div>
+      <p>PLG-to-enterprise conversion benchmarks; foundational to the chasm diagnosis in the strategy.</p>
+    </div>
+    <div class="framework-card">
+      <div class="tag">Community</div>
+      <div class="author">Pavilion · CMO Coffee Talk</div>
+      <div class="work">Peer-led roundtables on B2B marketing leadership and sales alignment</div>
+      <p>Peer perspectives on enterprise marketing operating models and pipeline council design.</p>
+    </div>
+    <div class="framework-card">
+      <div class="tag">Book + podcast</div>
+      <div class="author">April Dunford</div>
+      <div class="work">Sales Pitch (2023) and positioning interviews</div>
+      <p>Persona-translation methodology and the rights-to-win framing in Part Two.</p>
+    </div>
+    <div class="framework-card">
+      <div class="tag">Industry research</div>
+      <div class="author">LinkedIn B2B Institute</div>
+      <div class="work">The B2B Effectiveness Code — Binet &amp; Field (2021)</div>
+      <p>The 95-5 rule supporting the case for demand creation as the larger long-term lever.</p>
+    </div>
+    <div class="framework-card">
+      <div class="tag">Annual report</div>
+      <div class="author">HubSpot</div>
+      <div class="work">State of Marketing Report 2025</div>
+      <p>Industry adoption benchmarks for AI in marketing; context for the AI mandate challenge.</p>
+    </div>
   </div>
 
 </main>

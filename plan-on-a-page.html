@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canva B2B Plan on a Page — Jason Singh</title>
+<meta name="description" content="The Canva B2B field marketing strategy compressed to a single page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; color: #0E0E0E; background: #FFFFFF; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.5; }
+a { text-decoration: none; color: inherit; }
+p { line-height: 1.6; }
+nav { background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #ECEAE5; padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+nav .nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 54px; }
+nav .brand { font-size: 13px; font-weight: 600; color: #0E0E0E; }
+nav .brand .dot { color: #7C3AED; margin: 0 6px; }
+nav .brand .sub { color: #5C5C5C; font-weight: 500; }
+nav .links { display: flex; gap: 4px; }
+nav .links a { font-size: 11px; font-weight: 500; color: #5C5C5C; padding: 6px 10px; border-radius: 6px; transition: all 0.15s; }
+nav .links a:hover { background: #F4EEFF; color: #5B21B6; }
+nav .links a.active { background: #F4EEFF; color: #7C3AED; font-weight: 600; }
+main { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+.hero { padding: 48px 0 24px 0; border-bottom: 1px solid #ECEAE5; }
+.eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #A8421F; margin-bottom: 12px; }
+h1 { font-weight: 800; font-size: 36px; line-height: 1.05; letter-spacing: -0.035em; margin-bottom: 14px; }
+.lead { font-size: 13px; color: #5C5C5C; font-weight: 400; line-height: 1.7; max-width: 62ch; }
+section.body { padding: 28px 0 22px 0; border-bottom: 1px solid #ECEAE5; }
+section.body:last-of-type { border-bottom: none; }
+.sec-num { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #999; margin-bottom: 6px; }
+.sec-title { font-size: 18px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; line-height: 1.3; }
+.north-star { background: #0E0E0E; border-radius: 12px; padding: 22px; color: #fff; }
+.north-star .kicker { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #A78BFA; margin-bottom: 8px; }
+.north-star p { font-size: 17px; font-weight: 600; line-height: 1.4; letter-spacing: -0.015em; color: #fff; max-width: 64ch; }
+.stat-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid #ECEAE5; border-radius: 10px; overflow: hidden; background: #ECEAE5; }
+.stat-cell { background: #fff; padding: 14px 14px; }
+.stat-cell .num { font-size: 26px; font-weight: 800; color: #0E0E0E; line-height: 1; letter-spacing: -0.035em; }
+.stat-cell .label { font-size: 11px; color: #5C5C5C; margin-top: 6px; font-weight: 500; line-height: 1.4; }
+.gaps-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.gap-card { padding: 12px; border-radius: 8px; }
+.gap-card .num { font-size: 9px; font-weight: 600; letter-spacing: 0.1em; margin-bottom: 4px; }
+.gap-card .name { font-size: 12px; font-weight: 700; color: #0E0E0E; line-height: 1.3; margin-bottom: 4px; }
+.gap-card p { font-size: 10.5px; color: #5C5C5C; line-height: 1.5; }
+.gap-card.violet { background: #F4EEFF; border: 1px solid #E8DEFF; }
+.gap-card.violet .num { color: #5B21B6; }
+.gap-card.teal { background: #E0F7F8; border: 1px solid #C8EEEF; }
+.gap-card.teal .num { color: #0F6E72; }
+.gap-card.coral { background: #FFE9E2; border: 1px solid #FFD3C5; }
+.gap-card.coral .num { color: #A8421F; }
+.gap-card.amber { background: #FFF4DC; border: 1px solid #FCE6B8; }
+.gap-card.amber .num { color: #8B5A00; }
+.gap-card.pink { background: #FBEAF0; border: 1px solid #F2C8D9; }
+.gap-card.pink .num { color: #72243E; }
+.persona-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.persona-mini { border: 1px solid #ECEAE5; border-radius: 8px; padding: 12px; }
+.persona-mini .num { font-size: 9px; font-weight: 600; letter-spacing: 0.1em; margin-bottom: 4px; }
+.persona-mini .name { font-size: 12px; font-weight: 700; color: #0E0E0E; line-height: 1.3; margin-bottom: 4px; }
+.persona-mini .tag { font-size: 10px; color: #5C5C5C; font-style: italic; line-height: 1.4; margin-bottom: 6px; }
+.persona-mini .archetype { font-size: 9.5px; font-weight: 600; }
+.persona-mini.p1 { border-left: 3px solid #7C3AED; }
+.persona-mini.p1 .num, .persona-mini.p1 .archetype { color: #5B21B6; }
+.persona-mini.p2 { border-left: 3px solid #07B9CE; }
+.persona-mini.p2 .num, .persona-mini.p2 .archetype { color: #0F6E72; }
+.persona-mini.p3 { border-left: 3px solid #FF7A66; }
+.persona-mini.p3 .num, .persona-mini.p3 .archetype { color: #A8421F; }
+.persona-mini.p4 { border-left: 3px solid #D89200; }
+.persona-mini.p4 .num, .persona-mini.p4 .archetype { color: #8B5A00; }
+.persona-mini.p5 { border-left: 3px solid #E8438C; }
+.persona-mini.p5 .num, .persona-mini.p5 .archetype { color: #A02860; }
+.pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.pillar-card { border-radius: 10px; padding: 14px; }
+.pillar-card .row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
+.pillar-card .label { font-size: 9px; font-weight: 600; letter-spacing: 0.1em; }
+.pillar-card .pct { font-size: 18px; font-weight: 800; line-height: 1; }
+.pillar-card .name { font-size: 13px; font-weight: 700; color: #0E0E0E; line-height: 1.3; margin-bottom: 4px; }
+.pillar-card p { font-size: 11px; color: #5C5C5C; line-height: 1.5; }
+.pillar-card.violet { background: #F4EEFF; border: 1px solid #E8DEFF; }
+.pillar-card.violet .label, .pillar-card.violet .pct { color: #5B21B6; }
+.pillar-card.flagship { background: linear-gradient(120deg, #7C3AED 0%, #E8438C 50%, #FF7A66 100%); color: #fff; }
+.pillar-card.flagship .label { color: rgba(255,255,255,0.85); }
+.pillar-card.flagship .pct, .pillar-card.flagship .name { color: #fff; }
+.pillar-card.flagship p { color: rgba(255,255,255,0.95); }
+.pillar-card.teal { background: #E0F7F8; border: 1px solid #C8EEEF; }
+.pillar-card.teal .label, .pillar-card.teal .pct { color: #0F6E72; }
+.pillar-card.coral { background: #FFE9E2; border: 1px solid #FFD3C5; }
+.pillar-card.coral .label, .pillar-card.coral .pct { color: #A8421F; }
+.pillar-card.amber { background: #FFF4DC; border: 1px solid #FCE6B8; }
+.pillar-card.amber .label, .pillar-card.amber .pct { color: #8B5A00; }
+.pillar-card.plain { background: #fff; border: 1px solid #ECEAE5; }
+.pillar-card.plain .label { color: #5C5C5C; }
+.pillar-card.plain .pct { color: #0E0E0E; }
+.kpi-card { background: #fff; border: 1px solid #ECEAE5; border-radius: 10px; padding: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
+.kpi-card ul { list-style: none; padding: 0; margin: 0; }
+.kpi-card ul li { padding: 4px 0 4px 14px; position: relative; font-size: 11.5px; line-height: 1.5; color: #0E0E0E; }
+.kpi-card ul li::before { content: ''; position: absolute; left: 0; top: 10px; width: 5px; height: 5px; border-radius: 50%; background: #7C3AED; }
+.ninety { background: #0E0E0E; border-radius: 12px; padding: 6px; color: #fff; }
+.ninety .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; }
+.ninety .col { padding: 18px 16px; border-right: 1px solid rgba(255,255,255,0.1); }
+.ninety .col:last-child { border-right: none; }
+.ninety .when { font-size: 9px; font-weight: 700; letter-spacing: 0.14em; margin-bottom: 4px; }
+.ninety .head { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 10px; letter-spacing: -0.015em; }
+.ninety ul { list-style: none; padding: 0; margin: 0; color: rgba(255,255,255,0.92); }
+.ninety ul li { padding: 4px 0 4px 14px; position: relative; font-size: 11.5px; line-height: 1.5; }
+.ninety ul li::before { content: ''; position: absolute; left: 0; top: 10px; width: 5px; height: 5px; border-radius: 50%; background: var(--c, #A78BFA); }
+.ninety .col1 .when { color: #A78BFA; } .ninety .col1 ul li::before { background: #A78BFA; }
+.ninety .col2 .when { color: #7DD3FC; } .ninety .col2 ul li::before { background: #7DD3FC; }
+.ninety .col3 .when { color: #FFB4A0; } .ninety .col3 ul li::before { background: #FFB4A0; }
+.closing { background: linear-gradient(120deg, #7C3AED 0%, #E8438C 50%, #FF7A66 100%); border-radius: 12px; padding: 22px; color: #fff; text-align: center; margin-top: 24px; }
+.closing p { font-size: 16px; font-weight: 700; line-height: 1.45; letter-spacing: -0.015em; max-width: 56ch; margin: 0 auto; color: #fff; }
+.next-cta { display: block; padding: 18px 22px; border: 1px solid #ECEAE5; border-radius: 10px; color: #0E0E0E; margin: 14px 0 32px 0; }
+.next-cta:hover { background: #FAFAF9; }
+.next-cta .row { display: flex; justify-content: space-between; align-items: center; }
+.next-cta .label { font-size: 9px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #999; margin-bottom: 4px; }
+.next-cta .title { font-size: 16px; font-weight: 700; letter-spacing: -0.015em; }
+.next-cta .desc { font-size: 11px; color: #5C5C5C; margin-top: 4px; }
+.next-cta .arrow { font-size: 22px; font-weight: 600; color: #7C3AED; }
+.site-footer { border-top: 1px solid #ECEAE5; background: #FAFAF9; padding: 20px 24px; }
+.site-footer .footer-inner { max-width: 960px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; }
+.site-footer .name { font-weight: 600; color: #0E0E0E; }
+.site-footer .meta { color: #5C5C5C; font-weight: 400; }
+@media (max-width: 700px) { h1 { font-size: 28px; } .stat-strip { grid-template-columns: 1fr 1fr; } .gaps-row, .persona-row { grid-template-columns: 1fr 1fr; } .pillars { grid-template-columns: 1fr; } .kpi-card { grid-template-columns: 1fr; } .ninety .grid { grid-template-columns: 1fr; } .ninety .col { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); } nav .links { display: none; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="brand"><a href="index.html">Jason Singh<span class="dot">·</span><span class="sub">Canva</span></a></div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="framework.html">Framework</a>
+      <a href="messaging.html">Messaging</a>
+      <a href="plan-on-a-page.html" class="active">Plan</a>
+      <a href="strategy.html">Strategy</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <section class="hero">
+    <div class="eyebrow">Part three · Plan on a page</div>
+    <h1>The whole strategy,<br>on one page.</h1>
+    <p class="lead">The strategy distilled to its operating components — diagnosis, personas, six growth pillars with budget allocation, KPIs, and the first ninety days.</p>
+  </section>
+
+  <section class="body">
+    <div class="north-star">
+      <div class="kicker">North Star</div>
+      <p>Convert Canva's bottom-up adoption into top-down enterprise contracts — by activating the five buying-committee personas in parallel, on the visual brand they will see and the offboarding path they need.</p>
+    </div>
+  </section>
+
+  <section class="body">
+    <div class="sec-num">01 · Context</div>
+    <div class="sec-title">The asset is unprecedented. The motion isn't.</div>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="num">265<span style="color:#7C3AED">M</span></div><div class="label">Monthly active users — adoption is solved</div></div>
+      <div class="stat-cell"><div class="num">95<span style="color:#07B9CE">%</span></div><div class="label">Fortune 500 already use Canva</div></div>
+      <div class="stat-cell"><div class="num">28<span style="color:#FF7A66">M+</span></div><div class="label">Paying subscribers — expansion engine working</div></div>
+      <div class="stat-cell"><div class="num">414<span style="color:#D89200">%</span></div><div class="label">Forrester TEI three-year ROI (Canva Enterprise)</div></div>
+    </div>
+  </section>
+
+  <section class="body">
+    <div class="sec-num">02 · The diagnosis</div>
+    <div class="sec-title">Five gaps field marketing must close.</div>
+    <div class="gaps-row">
+      <div class="gap-card violet">
+        <div class="num">GAP 01</div>
+        <div class="name">PLG-to-enterprise chasm</div>
+        <p>Adoption is solved. Conversion to deployments involving IT, procurement, security is where deals stall.</p>
+      </div>
+      <div class="gap-card teal">
+        <div class="num">GAP 02</div>
+        <div class="name">Persona translation</div>
+        <p>Generic enterprise messaging does not move buying committees. Each persona needs its own value translation.</p>
+      </div>
+      <div class="gap-card coral">
+        <div class="num">GAP 03</div>
+        <div class="name">The offboarding question</div>
+        <p>"How do we transition off what we have?" is the question Sales has to answer — and currently can't.</p>
+      </div>
+      <div class="gap-card amber">
+        <div class="num">GAP 04</div>
+        <div class="name">Visual experiences</div>
+        <p>Canva's brand is its competitive moat. Field is the most underused expression of it.</p>
+      </div>
+      <div class="gap-card pink">
+        <div class="num">GAP 05</div>
+        <div class="name">Enterprise identity</div>
+        <p>Enterprise has the room to define its own narrative — distinct from Education and Consumer, with its own community and visible momentum.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="body">
+    <div class="sec-num">03 · The buying committee</div>
+    <div class="sec-title">Five personas activated in parallel — not sequentially.</div>
+    <div class="persona-row">
+      <div class="persona-mini p1">
+        <div class="num">PERSONA 01</div>
+        <div class="name">Force Multiplier</div>
+        <div class="tag">"Build me a content engine without new headcount."</div>
+        <div class="archetype">LOB Head · Creation</div>
+      </div>
+      <div class="persona-mini p2">
+        <div class="num">PERSONA 02</div>
+        <div class="name">Brand Architect</div>
+        <div class="tag">"Brand control without becoming the bottleneck."</div>
+        <div class="archetype">Champion · Capture</div>
+      </div>
+      <div class="persona-mini p3">
+        <div class="num">PERSONA 03</div>
+        <div class="name">Mandate Carrier</div>
+        <div class="tag">"AI-native org, deliver a defensible win."</div>
+        <div class="archetype">Business Buyer · Both</div>
+      </div>
+      <div class="persona-mini p4">
+        <div class="num">PERSONA 04</div>
+        <div class="name">Risk Closer</div>
+        <div class="tag">"Get control of ungoverned AI before crisis."</div>
+        <div class="archetype">Gatekeeper · Creation</div>
+      </div>
+      <div class="persona-mini p5">
+        <div class="num">PERSONA 05</div>
+        <div class="name">Commercial Pragmatist</div>
+        <div class="tag">"Cut the spend, make it defensible."</div>
+        <div class="archetype">Rationaliser · Capture</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="body">
+    <div class="sec-num">04 · How budget is allocated</div>
+    <div class="sec-title">Six growth pillars.</div>
+    <div class="pillars">
+      <div class="pillar-card violet">
+        <div class="row"><div class="label">PILLAR 01</div><div class="pct">28%</div></div>
+        <div class="name">Generate enterprise pipeline</div>
+        <p>ABM 200–300 named accounts. Canva Studios at 8–12 tentpole events. 15–20 executive immersives annually.</p>
+      </div>
+      <div class="pillar-card flagship">
+        <div class="row"><div class="label">PILLAR 02 · FLAGSHIP</div><div class="pct">20%</div></div>
+        <div class="name">Create Raving Fans</div>
+        <p>Pioneer Network, Champion community, peer prospecting, Reference Engine, storytelling, Customer Awards.</p>
+      </div>
+      <div class="pillar-card teal">
+        <div class="row"><div class="label">PILLAR 03</div><div class="pct">17%</div></div>
+        <div class="name">PLG-to-Enterprise conversion</div>
+        <p>Displacement battle cards, migration playbooks, champion enablement, partner co-marketing for stack integration.</p>
+      </div>
+      <div class="pillar-card coral">
+        <div class="row"><div class="label">PILLAR 04</div><div class="pct">17%</div></div>
+        <div class="name">Scale regional execution</div>
+        <p>NA: primary Sales counterpart, co-owned pipeline. EMEA &amp; APAC: localised playbooks, partner co-marketing tiering.</p>
+      </div>
+      <div class="pillar-card amber">
+        <div class="row"><div class="label">PILLAR 05</div><div class="pct">10%</div></div>
+        <div class="name">Build enterprise credibility</div>
+        <p>Forrester &amp; Gartner content. EY-Canva Alliance. Enterprise narrative ownership. Analyst &amp; PR.</p>
+      </div>
+      <div class="pillar-card plain">
+        <div class="row"><div class="label">PILLAR 06</div><div class="pct">8%</div></div>
+        <div class="name">Measurement infrastructure</div>
+        <p>Multi-touch attribution. Monthly spend-to-pipeline reviews. Kill underperformers within a quarter.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="body">
+    <div class="sec-num">05 · Top-line KPIs</div>
+    <div class="sec-title">What we measure.</div>
+    <div class="kpi-card">
+      <ul>
+        <li>Marketing-sourced enterprise pipeline as % of total</li>
+        <li>PLG-account-to-Enterprise conversion rate</li>
+        <li>Win rate against incumbent creative-suite vendors</li>
+        <li>Multi-threaded vs. single-threaded deal mix</li>
+      </ul>
+      <ul>
+        <li>Reference-attributed deal velocity acceleration</li>
+        <li>Cost-per-opportunity by program type</li>
+        <li>Customer NPS lift among enterprise base</li>
+        <li>Expansion revenue attributable to advocacy</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="body">
+    <div class="sec-num">06 · First 90 days</div>
+    <div class="sec-title">Listen. Plan. Execute. Three phases, fifteen specific deliverables.</div>
+    <div class="ninety">
+      <div class="grid">
+        <div class="col col1">
+          <div class="when">DAYS 1 — 30</div>
+          <div class="head">Listen &amp; diagnose.</div>
+          <ul>
+            <li>Sit with NA, EMEA, APAC Sales leadership — pipeline reviews and deal post-mortems</li>
+            <li>Audit current field programs against the persona framework and compelling-event library</li>
+            <li>Map the customer reference base — who we have, who's missing, where the gaps sit</li>
+            <li>Customer interviews: top 10 enterprises on their Pro → Business → Enterprise journey</li>
+            <li>Set baseline: marketing-sourced pipeline %, win rate vs incumbents, multi-threaded mix</li>
+          </ul>
+        </div>
+        <div class="col col2">
+          <div class="when">DAYS 31 — 60</div>
+          <div class="head">Plan &amp; align.</div>
+          <ul>
+            <li>Co-design the marketing → sales → partner motion with all three function leads</li>
+            <li>Ship Offboarding Playbook v1 — battle cards, migration playbooks, TCO calculator</li>
+            <li>Pioneer Program: 12 strategic customers selected, executive sponsorship secured</li>
+            <li>Persona-mapped enablement library live for Sales — content packs by persona and event</li>
+            <li>Bi-weekly pipeline council established with regional Sales leadership</li>
+          </ul>
+        </div>
+        <div class="col col3">
+          <div class="when">DAYS 61 — 90</div>
+          <div class="head">Execute &amp; prove.</div>
+          <ul>
+            <li>First Canva Studios activation in market — measure executive engagement</li>
+            <li>Pioneer Summit delivered — intimate, executive-level, 12 customers</li>
+            <li>Champion Network: first 50 champions identified and activated</li>
+            <li>Reference Engine live — sub-24-hour reference proven on a real deal</li>
+            <li>First QBR with CMO and CRO — kill 2–3 underperforming programs based on attribution</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="closing">
+    <p>The Canva AI 2.0 moment is the kind of inflection point where field marketing either accelerates the enterprise motion — or misses it entirely.</p>
+  </div>
+
+  <a class="next-cta" href="strategy.html">
+    <div class="row">
+      <div>
+        <div class="label">Next · Part four</div>
+        <div class="title">Canva B2B Field Marketing Strategy</div>
+        <div class="desc">The full strategy. Opportunity, gaps, challenges, awareness, committee, offboarding, growth pillars, Create Raving Fans.</div>
+      </div>
+      <div class="arrow">→</div>
+    </div>
+  </a>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="name">Jason Singh</span>
+    <span class="meta"><a href="mailto:jasonsingh826@gmail.com">jasonsingh826@gmail.com</a> · <a href="https://linkedin.com/in/jasonsingh1">linkedin.com/in/jasonsingh1</a> · May 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>

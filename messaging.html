@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canva B2B Messaging &amp; Positioning — Jason Singh</title>
+<meta name="description" content="Platform proposition, six rights to win, five buying-committee personas, and the compelling events that drive enterprise deals.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; color: #0E0E0E; background: #FFFFFF; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.5; }
+a { text-decoration: none; color: inherit; }
+p { line-height: 1.65; }
+nav { background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #ECEAE5; padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+nav .nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 54px; }
+nav .brand { font-size: 13px; font-weight: 600; color: #0E0E0E; }
+nav .brand .dot { color: #7C3AED; margin: 0 6px; }
+nav .brand .sub { color: #5C5C5C; font-weight: 500; }
+nav .links { display: flex; gap: 4px; }
+nav .links a { font-size: 11px; font-weight: 500; color: #5C5C5C; padding: 6px 10px; border-radius: 6px; transition: all 0.15s; }
+nav .links a:hover { background: #F4EEFF; color: #5B21B6; }
+nav .links a.active { background: #F4EEFF; color: #7C3AED; font-weight: 600; }
+main { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+.hero { padding: 60px 0 32px 0; border-bottom: 1px solid #ECEAE5; }
+.eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #0F6E72; margin-bottom: 14px; }
+h1 { font-weight: 800; font-size: 42px; line-height: 1.05; letter-spacing: -0.035em; margin-bottom: 16px; }
+.lead { font-size: 14px; color: #5C5C5C; font-weight: 400; line-height: 1.7; max-width: 62ch; }
+section.body { padding: 36px 0 28px 0; border-bottom: 1px solid #ECEAE5; }
+section.body:last-of-type { border-bottom: none; }
+.sec-num { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #999; margin-bottom: 6px; }
+.sec-title { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 6px; line-height: 1.3; }
+.sec-desc { font-size: 13px; color: #5C5C5C; line-height: 1.7; max-width: 62ch; margin-bottom: 16px; }
+.proposition { background: linear-gradient(120deg, #7C3AED 0%, #00C4CC 100%); border-radius: 12px; padding: 24px 22px; color: #fff; }
+.proposition .kicker { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.85); margin-bottom: 8px; }
+.proposition .main { font-size: 17px; font-weight: 600; line-height: 1.45; letter-spacing: -0.015em; margin-bottom: 10px; color: #fff; }
+.proposition .sub { font-size: 14px; font-weight: 400; line-height: 1.6; color: rgba(255,255,255,0.95); max-width: 64ch; }
+.note { font-size: 12px; color: #5C5C5C; line-height: 1.7; margin-top: 14px; max-width: 64ch; }
+.rights-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.right-card { border-radius: 10px; padding: 14px; }
+.right-card .num { font-size: 9px; font-weight: 600; letter-spacing: 0.1em; margin-bottom: 4px; }
+.right-card .name { font-size: 13px; font-weight: 700; margin-bottom: 4px; line-height: 1.3; }
+.right-card p { font-size: 11px; color: #0E0E0E; margin-bottom: 8px; line-height: 1.5; }
+.right-card .map { font-size: 10px; font-weight: 600; }
+.right-card.violet { background: #F4EEFF; border: 1px solid #E8DEFF; }
+.right-card.violet .num, .right-card.violet .name, .right-card.violet .map { color: #5B21B6; }
+.right-card.teal { background: #E0F7F8; border: 1px solid #C8EEEF; }
+.right-card.teal .num, .right-card.teal .name, .right-card.teal .map { color: #0F6E72; }
+.right-card.coral { background: #FFE9E2; border: 1px solid #FFD3C5; }
+.right-card.coral .num, .right-card.coral .name, .right-card.coral .map { color: #A8421F; }
+.right-card.amber { background: #FFF4DC; border: 1px solid #FCE6B8; }
+.right-card.amber .num, .right-card.amber .name, .right-card.amber .map { color: #8B5A00; }
+.right-card.pink { background: #FBEAF0; border: 1px solid #F2C8D9; }
+.right-card.pink .num, .right-card.pink .name, .right-card.pink .map { color: #72243E; }
+.right-card.dark { background: #0E0E0E; border: 1px solid #0E0E0E; color: #fff; }
+.right-card.dark .num, .right-card.dark .map { color: #A78BFA; }
+.right-card.dark .name { color: #fff; }
+.right-card.dark p { color: rgba(255,255,255,0.88); }
+.persona-stack { display: flex; flex-direction: column; gap: 8px; }
+.persona-block { border: 1px solid #ECEAE5; border-radius: 10px; padding: 16px; }
+.persona-block .header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 8px; flex-wrap: wrap; }
+.persona-block .num { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; }
+.persona-block .name { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; color: #0E0E0E; }
+.persona-block .tagline { font-size: 12px; font-style: italic; color: #5C5C5C; }
+.persona-block p { font-size: 12px; color: #0E0E0E; margin-bottom: 6px; line-height: 1.65; }
+.persona-block .footnote { font-size: 10px; color: #999; font-weight: 500; border-top: 1px dashed #ECEAE5; padding-top: 8px; margin-top: 4px; }
+.persona-block .footnote strong { font-weight: 700; }
+table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+.table-wrap { border: 1px solid #ECEAE5; border-radius: 10px; overflow: hidden; }
+thead th { background: #0E0E0E; color: #fff; padding: 10px 12px; text-align: left; font-weight: 600; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; }
+tbody td { padding: 10px 12px; border-bottom: 1px solid #ECEAE5; vertical-align: top; line-height: 1.55; }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr.alt { background: #FAFAF9; }
+tbody td.muted { color: #444; }
+.event-stack { display: flex; flex-direction: column; gap: 10px; }
+.event-card { border: 1px solid #ECEAE5; border-radius: 10px; padding: 18px; background: #fff; }
+.event-card .header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 10px; flex-wrap: wrap; }
+.event-card .num { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; }
+.event-card .name { font-size: 18px; font-weight: 700; letter-spacing: -0.02em; color: #0E0E0E; }
+.event-card .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.event-card .label-mini { font-size: 9px; font-weight: 600; letter-spacing: 0.12em; color: #999; text-transform: uppercase; margin-bottom: 4px; }
+.event-card p { font-size: 12px; color: #0E0E0E; margin-bottom: 10px; line-height: 1.65; }
+.event-card .triggers { list-style: none; padding: 0; }
+.event-card .triggers li { padding: 3px 0 3px 14px; position: relative; font-size: 11.5px; color: #0E0E0E; line-height: 1.55; }
+.event-card .triggers li::before { content: ''; position: absolute; left: 0; top: 9px; width: 5px; height: 5px; border-radius: 50%; background: var(--c, #999); }
+.event-card .persona-meta { font-size: 12px; margin-bottom: 4px; }
+.event-card.pink { border-left: 4px solid #E8438C; }
+.event-card.pink .num { color: #A02860; }
+.event-card.pink .triggers li::before { background: #E8438C; }
+.event-card.pink .persona-meta strong { color: #A02860; }
+.event-card.coral { border-left: 4px solid #FF7A66; }
+.event-card.coral .num { color: #A8421F; }
+.event-card.coral .triggers li::before { background: #FF7A66; }
+.event-card.coral .persona-meta strong { color: #A8421F; }
+.event-card.amber { border-left: 4px solid #D89200; }
+.event-card.amber .num { color: #8B5A00; }
+.event-card.amber .triggers li::before { background: #D89200; }
+.event-card.amber .persona-meta strong { color: #8B5A00; }
+.event-card.violet { border-left: 4px solid #7C3AED; }
+.event-card.violet .num { color: #5B21B6; }
+.event-card.violet .triggers li::before { background: #7C3AED; }
+.event-card.violet .persona-meta strong { color: #5B21B6; }
+.event-card.teal { border-left: 4px solid #07B9CE; }
+.event-card.teal .num { color: #0F6E72; }
+.event-card.teal .triggers li::before { background: #07B9CE; }
+.event-card.teal .persona-meta strong { color: #0F6E72; }
+.insight { padding: 16px 18px; border-left: 3px solid #0E0E0E; background: #FAFAF9; font-size: 12px; color: #444; line-height: 1.7; margin-top: 18px; }
+.insight b { color: #0E0E0E; font-weight: 600; }
+.next-cta { display: block; padding: 18px 22px; border: 1px solid #ECEAE5; border-radius: 10px; color: #0E0E0E; margin: 24px 0 32px 0; }
+.next-cta:hover { background: #FAFAF9; }
+.next-cta .row { display: flex; justify-content: space-between; align-items: center; }
+.next-cta .label { font-size: 9px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #999; margin-bottom: 4px; }
+.next-cta .title { font-size: 16px; font-weight: 700; letter-spacing: -0.015em; }
+.next-cta .desc { font-size: 11px; color: #5C5C5C; margin-top: 4px; }
+.next-cta .arrow { font-size: 22px; font-weight: 600; color: #7C3AED; }
+.site-footer { border-top: 1px solid #ECEAE5; background: #FAFAF9; padding: 20px 24px; }
+.site-footer .footer-inner { max-width: 960px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; }
+.site-footer .name { font-weight: 600; color: #0E0E0E; }
+.site-footer .meta { color: #5C5C5C; font-weight: 400; }
+@media (max-width: 700px) { h1 { font-size: 30px; } .rights-grid { grid-template-columns: 1fr; } .event-card .grid { grid-template-columns: 1fr; } nav .links { display: none; } table { font-size: 10px; } thead th, tbody td { padding: 6px 8px; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="brand"><a href="index.html">Jason Singh<span class="dot">·</span><span class="sub">Canva</span></a></div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="framework.html">Framework</a>
+      <a href="messaging.html" class="active">Messaging</a>
+      <a href="plan-on-a-page.html">Plan</a>
+      <a href="strategy.html">Strategy</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <section class="hero">
+    <div class="eyebrow">Part two · Messaging</div>
+    <h1>Canva B2B Messaging<br>&amp; Positioning.</h1>
+    <p class="lead">A platform proposition, six structural rights to win, and the five buying-committee personas — the system that lets every field program speak with one voice and to the right person at the right time.</p>
+  </section>
+
+  <section class="body">
+    <div class="sec-num">01 · Platform proposition</div>
+    <h2 class="sec-title">One statement, persona-agnostic.</h2>
+    <p class="sec-desc">The single positioning everything else translates from. Every persona-specific message is a translation of this proposition into their language.</p>
+    <div class="proposition">
+      <div class="kicker">The proposition</div>
+      <div class="main">Canva AI 2.0 is the world's only AI platform purpose-built for visual work at enterprise scale.</div>
+      <div class="sub">Powered by the Canva Design Model, one brief becomes a complete, on-brand creative operation across every format and channel. 265 million people already know how to use it.</div>
+    </div>
+    <p class="note">The proposition lands four claims at once: a category (visual work at enterprise scale), a technical moat (the Canva Design Model), an outcome (a complete creative operation), and an unfair advantage (an installed base of 265M users).</p>
+  </section>
+
+  <section class="body">
+    <div class="sec-num">02 · Rights to win</div>
+    <h2 class="sec-title">Six structural advantages competitors cannot replicate.</h2>
+    <p class="sec-desc">Each right maps to specific personas. Field programs select rights based on which personas they need to move.</p>
+    <div class="rights-grid">
+      <div class="right-card violet">
+        <div class="num">RIGHT 01</div>
+        <div class="name">Design-native AI — the Canva Design Model</div>
+        <p>The only foundation model purpose-built for design. Understands layout, hierarchy, brand. Outputs fully layered, editable design — not flat images.</p>
+        <div class="map">Brand Architect · Force Multiplier</div>
+      </div>
+      <div class="right-card teal">
+        <div class="num">RIGHT 02</div>
+        <div class="name">265M users already know how to use it</div>
+        <p>No training. No change management. No multi-year adoption curve. Enterprise deployment is an unlock, not an onboarding project.</p>
+        <div class="map">Mandate Carrier · Force Multiplier</div>
+      </div>
+      <div class="right-card coral">
+        <div class="num">RIGHT 03</div>
+        <div class="name">Brand Intelligence — governance at scale, by default</div>
+        <p>Every design starts on-brand automatically. Retroactive brand updates across thousands of assets in one instruction.</p>
+        <div class="map">Brand Architect · Force Multiplier</div>
+      </div>
+      <div class="right-card amber">
+        <div class="num">RIGHT 04</div>
+        <div class="name">Owned AI infrastructure — pricing stability</div>
+        <p>Proprietary models: 7× faster, 30× cheaper than frontier. Pricing not exposed to OpenAI or Google rate changes. Customer data stays inside Canva.</p>
+        <div class="map">Commercial Pragmatist · Risk Closer</div>
+      </div>
+      <div class="right-card pink">
+        <div class="num">RIGHT 05</div>
+        <div class="name">Connectors — creative hub of the existing stack</div>
+        <p>Slack, Gmail, Drive, Zoom, HubSpot, Notion. Canva does not replace the stack — it becomes the creative layer pulling context from where work already happens.</p>
+        <div class="map">Mandate Carrier · Force Multiplier</div>
+      </div>
+      <div class="right-card dark">
+        <div class="num">RIGHT 06</div>
+        <div class="name">Canva Shield — security without compromise</div>
+        <p>SOC 2 Type II, ISO 27001, SSO, SAML, SCIM, data residency, AI indemnification for 100+ seat customers — at no extra cost.</p>
+        <div class="map">Risk Closer · Commercial Pragmatist</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="body">
+    <div class="sec-num">03 · Personas</div>
+    <h2 class="sec-title">The five archetypes — situations, not titles.</h2>
+    <p class="sec-desc">A title is a container. The persona is the situation, the mandate, the fear driving them, and the version of success they are trying to reach. Each maps to one of the five framework archetypes (Champion, Gatekeeper, Business Buyer, LOB Head, Rationaliser).</p>
+
+    <div class="persona-stack">
+
+      <div class="persona-block">
+        <div class="header">
+          <span class="num" style="color:#5B21B6">PERSONA 01</span>
+          <span class="name">The Force Multiplier</span>
+          <span class="tagline">"Build me a content engine without new headcount."</span>
+        </div>
+        <p><strong>Situation.</strong> Told to produce 5–10× the content with the same team. New headcount is not coming. The answer from above is "use AI." Looking for a production system that multiplies output without sacrificing quality.</p>
+        <p><strong>Value proposition.</strong> Multiply your team's output without growing the team. One brief becomes a complete, on-brand campaign across every format and channel.</p>
+        <p><strong>Rights to win.</strong> Design-native AI · Brand Intelligence · 265M users · Connectors</p>
+        <p><strong>Proof.</strong> 7,800+ design hours saved annually. Tyla Group: 21,000 hours in six months. Expedia: 230 hours on a single rebrand. 60% reduction in cost per design.</p>
+        <div class="footnote">Framework archetype: <strong style="color:#5B21B6">LOB Head</strong> · creation motion</div>
+      </div>
+
+      <div class="persona-block">
+        <div class="header">
+          <span class="num" style="color:#0F6E72">PERSONA 02</span>
+          <span class="name">The Brand Architect</span>
+          <span class="tagline">"Get me brand control back without becoming the bottleneck."</span>
+        </div>
+        <p><strong>Situation.</strong> The brand is being violated thousands of times a week — sales decks off-template, regional teams improvising, social posts the brand team never sees. Wants governance infrastructure, not a gatekeeping role.</p>
+        <p><strong>Value proposition.</strong> Brand consistency by default. Templates, approvals, and brand intelligence that prevent off-brand work without slowing the team down.</p>
+        <p><strong>Rights to win.</strong> Brand Intelligence · Design-native AI · Canva Shield</p>
+        <p><strong>Proof.</strong> FedEx: 77% reduction in brand review requests within three months. 16,000 employees on a unified brand platform. Docusign: opened the brand to the entire company without losing control.</p>
+        <div class="footnote">Framework archetype: <strong style="color:#0F6E72">Champion</strong> · capture motion</div>
+      </div>
+
+      <div class="persona-block">
+        <div class="header">
+          <span class="num" style="color:#A8421F">PERSONA 03</span>
+          <span class="name">The Mandate Carrier</span>
+          <span class="tagline">"Make this org AI-native and give me a win I can point to."</span>
+        </div>
+        <p><strong>Situation.</strong> Did not choose this. The board, CEO, or CMO handed them an AI mandate and a timeline. Needs a visible, defensible win — fast — that proves the AI investment is working. Looking for the program that becomes the case study, not the experiment that becomes a footnote.</p>
+        <p><strong>Value proposition.</strong> The fastest, lowest-risk path to AI-native productivity at scale. 265M users means deployment is an unlock, not a project.</p>
+        <p><strong>Rights to win.</strong> 265M users · Connectors · Design-native AI</p>
+        <p><strong>Proof.</strong> 3rd most-used AI tool globally. 27B+ AI uses on Canva. 95% F500 adoption. eXp Realty: rolled out to 82,000 agents — first company-wide Enterprise rollout in real estate.</p>
+        <div class="footnote">Framework archetype: <strong style="color:#A8421F">Business Buyer</strong> · creation → capture motion</div>
+      </div>
+
+      <div class="persona-block">
+        <div class="header">
+          <span class="num" style="color:#8B5A00">PERSONA 04</span>
+          <span class="name">The Risk Closer</span>
+          <span class="tagline">"Get control of the AI tools people are already using."</span>
+        </div>
+        <p><strong>Situation.</strong> Employees are using ungoverned AI tools. Data is going places they cannot see. 82% of marketers bypass IT on creative tooling. Not against AI — against the version of AI that creates a breach, a compliance problem, or a legal exposure.</p>
+        <p><strong>Value proposition.</strong> A governed, IT-managed replacement for fragmented creative shadow IT. Same productivity, full visibility.</p>
+        <p><strong>Rights to win.</strong> Canva Shield · Owned AI · 265M users</p>
+        <p><strong>Proof.</strong> Proprietary models 7× faster and 30× cheaper. FedEx SSO rollout completed in minutes. Enterprise admin controls. AI indemnification at no additional cost.</p>
+        <div class="footnote">Framework archetype: <strong style="color:#8B5A00">Gatekeeper</strong> · creation motion</div>
+      </div>
+
+      <div class="persona-block">
+        <div class="header">
+          <span class="num" style="color:#A02860">PERSONA 05</span>
+          <span class="name">The Commercial Pragmatist</span>
+          <span class="tagline">"Cut this spend and make the decision defensible."</span>
+        </div>
+        <p><strong>Situation.</strong> Must justify every line item. The creative stack is fragmented and invisible — Adobe seats, agency retainers, freelancer invoices, point tools. The Adobe stack is breaking under price pressure. Needs a consolidation story procurement can defend.</p>
+        <p><strong>Value proposition.</strong> Consolidate fragmented creative spend into one predictable contract. Up to 60% savings versus Adobe replacement.</p>
+        <p><strong>Rights to win.</strong> Owned AI · Canva Shield · 265M users</p>
+        <p><strong>Proof.</strong> Forrester TEI: 414% ROI. Up to 60% Adobe replacement savings. 28M+ paying subscribers globally and 35% YoY revenue growth — expansion engine working.</p>
+        <div class="footnote">Framework archetype: <strong style="color:#A02860">Rationaliser</strong> · capture motion</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="body">
+    <div class="sec-num">04 · Journey × persona × message</div>
+    <h2 class="sec-title">Different personas enter at different stages.</h2>
+    <p class="sec-desc">The message type must match where the persona is — not where Canva wants them to be.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:11%">Stage</th>
+            <th style="width:24%">What they're thinking</th>
+            <th style="width:18%">Active personas</th>
+            <th style="width:17%">Message type</th>
+            <th style="width:30%">Field motion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Unaware</strong></td>
+            <td class="muted">"Canva is a consumer tool. Not an IT priority."</td>
+            <td class="muted">Risk Closer, Commercial Pragmatist</td>
+            <td class="muted">Provocation</td>
+            <td class="muted">Thought leadership at CIO and CFO peer events. "The Creative Stack Is Breaking" narrative.</td>
+          </tr>
+          <tr class="alt">
+            <td><strong>Problem aware</strong></td>
+            <td class="muted">"Our creative output is too slow / too expensive / off-brand."</td>
+            <td class="muted">All five</td>
+            <td class="muted">Problem amplification</td>
+            <td class="muted">Industry research, Forrester TEI, peer-led panels showing the cost of the status quo.</td>
+          </tr>
+          <tr>
+            <td><strong>Solution aware</strong></td>
+            <td class="muted">"AI-native creative is the answer — but which one?"</td>
+            <td class="muted">Force Multiplier, Brand Architect, Mandate Carrier</td>
+            <td class="muted">Category positioning</td>
+            <td class="muted">Canva Studios at tentpole events, Canva Create Enterprise, analyst content.</td>
+          </tr>
+          <tr class="alt">
+            <td><strong>Product aware</strong></td>
+            <td class="muted">"We use Canva already — should we go Enterprise?"</td>
+            <td class="muted">Brand Architect, Force Multiplier</td>
+            <td class="muted">Expansion / upgrade</td>
+            <td class="muted">Champion enablement, business case builder, AI 2.0 upgrade campaigns.</td>
+          </tr>
+          <tr>
+            <td><strong>Evaluating</strong></td>
+            <td class="muted">"Now my committee needs convincing."</td>
+            <td class="muted">All five — in parallel</td>
+            <td class="muted">Multi-threaded enablement</td>
+            <td class="muted">Persona-specific content packs activated simultaneously. Executive Briefing Centre. Customer references by persona.</td>
+          </tr>
+          <tr class="alt">
+            <td><strong>Decision</strong></td>
+            <td class="muted">"How do we transition off what we have?"</td>
+            <td class="muted">Risk Closer, Commercial Pragmatist</td>
+            <td class="muted">Objection removal</td>
+            <td class="muted">Procurement content pack: TCO, migration, security bundle, contract FAQ.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="body">
+    <div class="sec-num">05 · Compelling events &amp; triggers</div>
+    <h2 class="sec-title">When buyers come to market — and what triggers the conversation.</h2>
+    <p class="sec-desc">Enterprise deals do not close because the buyer woke up and decided they needed visual AI. They close because something in the business changed. These are the five compelling events Canva's enterprise deals consistently turn on — what each one looks like, what signals it, the personas it activates, and how field marketing meets the moment.</p>
+
+    <div class="event-stack">
+
+      <div class="event-card pink">
+        <div class="header">
+          <span class="num">COMPELLING EVENT 01</span>
+          <span class="name">Vendor consolidation &amp; creative SaaS rationalization</span>
+        </div>
+        <div class="grid">
+          <div>
+            <div class="label-mini">The setup</div>
+            <p>A CFO-driven rationalization exercise. Triggered by a budget cut, an M&amp;A integration, or an "every-vendor-must-justify-itself" mandate. The most common displacement target is Adobe Creative Cloud — non-design teams forced into expensive seats they barely use, plus designers themselves now have a credible alternative since the Affinity acquisition gave Canva professional-grade vector, photo, and layout tools at no additional cost.</p>
+            <div class="label-mini">Triggers</div>
+            <ul class="triggers">
+              <li>CFO transition or "reduce SaaS by X%" mandate</li>
+              <li>Annual budget review with cut targets</li>
+              <li>M&amp;A activity forcing stack consolidation</li>
+              <li>Incumbent creative-suite renewal within 90 days</li>
+              <li>"We have nine different visual content tools" audit finding</li>
+            </ul>
+          </div>
+          <div>
+            <div class="label-mini">Personas activated</div>
+            <div class="persona-meta"><strong>Primary:</strong> Commercial Pragmatist</div>
+            <div class="persona-meta" style="margin-bottom:12px"><strong style="color:#5C5C5C">Secondary:</strong> Risk Closer</div>
+            <div class="label-mini">Field response</div>
+            <p style="margin-bottom:0">Procurement-ready TCO calculator and Forrester TEI report front and centre. CFO peer reference. Affinity-positioned displacement battle card to Sales. Joint EBC pairing Procurement and Marketing in the same room.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card coral">
+        <div class="header">
+          <span class="num">COMPELLING EVENT 02</span>
+          <span class="name">AI mandate moving from pilot to operational</span>
+        </div>
+        <div class="grid">
+          <div>
+            <div class="label-mini">The setup</div>
+            <p>The 2024 question was "are we doing AI?" The 2026 question is "are we doing it at scale, with governance, with a defensible production rollout?" The Mandate Carrier has a board commitment to deliver AI-native productivity within a defined window. They are not running another pilot — they are looking for the program that becomes the case study, not the experiment that becomes a footnote.</p>
+            <div class="label-mini">Triggers</div>
+            <ul class="triggers">
+              <li>Board-mandated AI program with delivery deadline</li>
+              <li>New CEO or CMO hired to drive transformation</li>
+              <li>IPO preparation or major investor moment</li>
+              <li>"Scale efficiency" or productivity-per-employee mandate</li>
+              <li>Fortune 500 peer announces a company-wide AI rollout</li>
+            </ul>
+          </div>
+          <div>
+            <div class="label-mini">Personas activated</div>
+            <div class="persona-meta"><strong>Primary:</strong> Mandate Carrier</div>
+            <div class="persona-meta" style="margin-bottom:12px"><strong style="color:#5C5C5C">Secondary:</strong> Force Multiplier</div>
+            <div class="label-mini">Field response</div>
+            <p style="margin-bottom:0">Executive briefing led by Canva CMO. Peer reference call with a Mandate Carrier who has shipped at scale (eXp Realty 82K-agent rollout). Canva Create Enterprise track invitation. Joint POV with the EY-Canva Alliance on agentic AI in marketing workflows.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card amber">
+        <div class="header">
+          <span class="num">COMPELLING EVENT 03</span>
+          <span class="name">Shadow AI &amp; ungoverned tool sprawl</span>
+        </div>
+        <div class="grid">
+          <div>
+            <div class="label-mini">The setup</div>
+            <p>The CISO or CIO has just learned how many AI tools the marketing team is actually using. Free ChatGPT accounts, Midjourney, image generators, point AI tools — none of them in the SSO directory, none in the audit log, none indemnified. The Risk Closer suddenly has visibility, and a deadline to do something about it.</p>
+            <div class="label-mini">Triggers</div>
+            <ul class="triggers">
+              <li>Annual security review or SOC 2 / ISO 27001 audit</li>
+              <li>Shadow-IT or AI tool sprawl scan results</li>
+              <li>Data breach at a competitor or peer company</li>
+              <li>New CISO mandate to lock down generative AI</li>
+              <li>Sector regulator activity (financial services, healthcare)</li>
+            </ul>
+          </div>
+          <div>
+            <div class="label-mini">Personas activated</div>
+            <div class="persona-meta"><strong>Primary:</strong> Risk Closer</div>
+            <div class="persona-meta" style="margin-bottom:12px"><strong style="color:#5C5C5C">Secondary:</strong> Commercial Pragmatist</div>
+            <div class="label-mini">Field response</div>
+            <p style="margin-bottom:0">Canva Shield deep-dive with security architecture diagrams. AI indemnification documentation. Procurement-ready security bundle (SOC 2, ISO 27001, SSO, SAML). Joint session pairing the Risk Closer with the Champion who can advocate internally.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card violet">
+        <div class="header">
+          <span class="num">COMPELLING EVENT 04</span>
+          <span class="name">PLG-to-Enterprise upgrade trigger</span>
+        </div>
+        <div class="grid">
+          <div>
+            <div class="label-mini">The setup</div>
+            <p>The org has been on Canva for years. A team started with free, more teams added Pro, the marketing org moved to Canva Business — and now there are fifty, a hundred, or three hundred seats sprawled across four billing accounts with no SSO, no central brand controls, no procurement visibility. Someone — usually the original champion — finally raises the question: shouldn't this be one Enterprise contract?</p>
+            <div class="label-mini">Triggers</div>
+            <ul class="triggers">
+              <li>50+ Canva Pro or Canva Business seats across the org</li>
+              <li>Multiple billing accounts in different cost centres</li>
+              <li>New SSO or SAML mandate from IT</li>
+              <li>Brand team frustrated by inconsistent output across teams</li>
+              <li>Procurement consolidating SaaS and discovering Canva sprawl</li>
+            </ul>
+          </div>
+          <div>
+            <div class="label-mini">Personas activated</div>
+            <div class="persona-meta"><strong>Primary:</strong> Force Multiplier</div>
+            <div class="persona-meta" style="margin-bottom:12px"><strong style="color:#5C5C5C">Secondary:</strong> Brand Architect (Pragmatist closes)</div>
+            <div class="label-mini">Field response</div>
+            <p style="margin-bottom:0">PLG-signal-triggered ABM. Champion enablement to build the Enterprise business case internally. Brand Architect briefing on governance unlocks. Adoption-data report — "you're already paying for X seats, here's what Enterprise unlocks." Procurement TCO comparison.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card teal">
+        <div class="header">
+          <span class="num">COMPELLING EVENT 05</span>
+          <span class="name">Brand fragmentation at scale</span>
+        </div>
+        <div class="grid">
+          <div>
+            <div class="label-mini">The setup</div>
+            <p>The brand is fragmenting in real time. M&amp;A integration adding new entities with their own visual identity. Global expansion launching new regional teams improvising. Franchisee or distributed-team networks producing off-brand collateral at volume. The Brand Architect has visibility into the chaos and a deadline — usually a CMO commitment to "unify the brand by Q4" — to fix it.</p>
+            <div class="label-mini">Triggers</div>
+            <ul class="triggers">
+              <li>M&amp;A integration adding sub-brands or acquired entities</li>
+              <li>International expansion launching new regional teams</li>
+              <li>Franchise or partner network with brand-quality issues</li>
+              <li>New CMO with a "unify the brand" mandate</li>
+              <li>Brand audit revealing widespread off-template usage</li>
+            </ul>
+          </div>
+          <div>
+            <div class="label-mini">Personas activated</div>
+            <div class="persona-meta"><strong>Primary:</strong> Brand Architect</div>
+            <div class="persona-meta" style="margin-bottom:12px"><strong style="color:#5C5C5C">Secondary:</strong> Force Multiplier</div>
+            <div class="label-mini">Field response</div>
+            <p style="margin-bottom:0">Brand Kits 2.0 demo with M&amp;A use case. Customer reference from a peer Brand Architect who has unified post-acquisition (FedEx, Docusign). Brand Intelligence walkthrough showing automatic on-brand defaults at scale. Workshop on rolling out brand controls without slowing teams.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="insight"><b>How field uses this.</b> Compelling events drive the campaign calendar — not internal product cycles. When intel surfaces a trigger in a target account, the matching field play activates within seven days. This is what "sales-aligned" actually means in practice: the program library is indexed by event, not by quarter.</div>
+  </section>
+
+  <a class="next-cta" href="plan-on-a-page.html">
+    <div class="row">
+      <div>
+        <div class="label">Next · Part three</div>
+        <div class="title">Canva B2B Plan on a Page</div>
+        <div class="desc">The whole strategy compressed to a single page — context, gaps, six pillars, KPIs, and ninety-day priorities.</div>
+      </div>
+      <div class="arrow">→</div>
+    </div>
+  </a>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="name">Jason Singh</span>
+    <span class="meta"><a href="mailto:jasonsingh826@gmail.com">jasonsingh826@gmail.com</a> · <a href="https://linkedin.com/in/jasonsingh1">linkedin.com/in/jasonsingh1</a> · May 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>

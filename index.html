@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jason Singh — Canva Field Marketing</title>
+<meta name="description" content="A field marketing point of view for Canva — framework, positioning, plan, and strategy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; color: #0E0E0E; background: #FFFFFF; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.5; }
+a { text-decoration: none; color: inherit; }
+p { line-height: 1.65; }
+nav { background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #ECEAE5; padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+nav .nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 54px; }
+nav .brand { font-size: 13px; font-weight: 600; color: #0E0E0E; }
+nav .brand .dot { color: #7C3AED; margin: 0 6px; }
+nav .brand .sub { color: #5C5C5C; font-weight: 500; }
+nav .links { display: flex; gap: 4px; }
+nav .links a { font-size: 11px; font-weight: 500; color: #5C5C5C; padding: 6px 10px; border-radius: 6px; transition: all 0.15s; }
+nav .links a:hover { background: #F4EEFF; color: #5B21B6; }
+nav .links a.active { background: #F4EEFF; color: #7C3AED; font-weight: 600; }
+main { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+.hero { padding: 64px 0 40px 0; }
+.eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #5B21B6; margin-bottom: 14px; }
+h1 { font-weight: 800; font-size: 48px; line-height: 1.0; letter-spacing: -0.035em; margin-bottom: 18px; }
+.gradient-text { background: linear-gradient(120deg, #7C3AED 0%, #00C4CC 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lead { font-size: 15px; color: #5C5C5C; font-weight: 400; max-width: 62ch; }
+.section-header { padding: 32px 0 0 0; border-top: 1px solid #ECEAE5; }
+.section-header .small-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #999; margin-bottom: 6px; }
+.section-header h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.3; margin-bottom: 6px; }
+.section-header p { font-size: 13px; color: #5C5C5C; max-width: 62ch; }
+.toc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 16px 0; }
+.toc-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 140px; padding: 18px; border-radius: 10px; transition: transform 0.18s ease; cursor: pointer; }
+.toc-card:hover { transform: translateY(-2px); }
+.toc-card .num { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; margin-bottom: 8px; }
+.toc-card .title { font-size: 15px; font-weight: 700; color: #0E0E0E; line-height: 1.25; letter-spacing: -0.015em; margin-bottom: 6px; }
+.toc-card .desc { font-size: 12px; color: #5C5C5C; line-height: 1.5; }
+.toc-card .meta { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; font-size: 10px; font-weight: 600; }
+.toc-card .arrow { font-size: 16px; font-weight: 600; }
+.toc-card.violet { background: #F4EEFF; border: 1px solid #E8DEFF; }
+.toc-card.violet .num, .toc-card.violet .meta span:first-child { color: #5B21B6; }
+.toc-card.violet .arrow { color: #7C3AED; }
+.toc-card.teal { background: #E0F7F8; border: 1px solid #C8EEEF; }
+.toc-card.teal .num, .toc-card.teal .meta span:first-child { color: #0F6E72; }
+.toc-card.teal .arrow { color: #00C4CC; }
+.toc-card.coral { background: #FFE9E2; border: 1px solid #FFD3C5; }
+.toc-card.coral .num, .toc-card.coral .meta span:first-child { color: #A8421F; }
+.toc-card.coral .arrow { color: #FF7A66; }
+.toc-card.amber { background: #FFF4DC; border: 1px solid #FCE6B8; }
+.toc-card.amber .num, .toc-card.amber .meta span:first-child { color: #8B5A00; }
+.toc-card.amber .arrow { color: #D89200; }
+.thesis { background: linear-gradient(120deg, #7C3AED 0%, #00C4CC 100%); border-radius: 12px; padding: 24px 22px; color: #fff; margin: 32px 0 36px 0; }
+.thesis .kicker { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.85); margin-bottom: 6px; }
+.thesis p { font-size: 17px; font-weight: 600; line-height: 1.4; letter-spacing: -0.015em; max-width: 50ch; color: #fff; }
+.site-footer { border-top: 1px solid #ECEAE5; background: #FAFAF9; padding: 20px 24px; }
+.site-footer .footer-inner { max-width: 960px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; }
+.site-footer .name { font-weight: 600; color: #0E0E0E; }
+.site-footer .meta { color: #5C5C5C; font-weight: 400; }
+.site-footer .meta a:hover { color: #7C3AED; }
+@media (max-width: 700px) { h1 { font-size: 36px; } .toc-grid { grid-template-columns: 1fr; } nav .links { display: none; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="brand">Jason Singh<span class="dot">·</span><span class="sub">Canva</span></div>
+    <div class="links">
+      <a href="index.html" class="active">Home</a>
+      <a href="framework.html">Framework</a>
+      <a href="messaging.html">Messaging</a>
+      <a href="plan-on-a-page.html">Plan</a>
+      <a href="strategy.html">Strategy</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <section class="hero">
+    <div class="eyebrow">Strategic engagement · May 2026</div>
+    <h1>A field marketing<br>point of view for <span class="gradient-text">Canva</span>.</h1>
+    <p class="lead">A framework, a positioning system, a plan on a page, and a detailed strategy — Canva's global enterprise field marketing motion, end to end.</p>
+  </section>
+
+  <section class="section-header">
+    <div class="small-eyebrow">Contents</div>
+    <h2>Four documents, one argument.</h2>
+    <p>Canva has won the consumer game. The work ahead is converting bottom-up adoption into top-down enterprise contracts — and field marketing is the engine that makes that conversion happen.</p>
+  </section>
+
+  <div class="toc-grid">
+
+    <a class="toc-card violet" href="framework.html">
+      <div>
+        <div class="num">PART ONE</div>
+        <div class="title">The Integrated Field Marketing Framework</div>
+        <div class="desc">Company-agnostic operating model. Three eras, buyer awareness, demand creation × capture, ICP, personas, measurement.</div>
+      </div>
+      <div class="meta"><span>Read framework</span><span class="arrow">→</span></div>
+    </a>
+
+    <a class="toc-card teal" href="messaging.html">
+      <div>
+        <div class="num">PART TWO</div>
+        <div class="title">Canva B2B Messaging &amp; Positioning</div>
+        <div class="desc">Platform proposition, six rights to win, five buying-committee personas, journey × persona × message, compelling events.</div>
+      </div>
+      <div class="meta"><span>Read messaging</span><span class="arrow">→</span></div>
+    </a>
+
+    <a class="toc-card coral" href="plan-on-a-page.html">
+      <div>
+        <div class="num">PART THREE</div>
+        <div class="title">Canva B2B Plan on a Page</div>
+        <div class="desc">The strategy distilled — diagnosis, personas, six growth pillars, KPIs, and ninety-day priorities.</div>
+      </div>
+      <div class="meta"><span>Read plan</span><span class="arrow">→</span></div>
+    </a>
+
+    <a class="toc-card amber" href="strategy.html">
+      <div>
+        <div class="num">PART FOUR</div>
+        <div class="title">Canva B2B Field Marketing Strategy</div>
+        <div class="desc">Full strategy. Opportunity, gaps, challenges, awareness, committee, offboarding, growth pillars, Create Raving Fans.</div>
+      </div>
+      <div class="meta"><span>Read strategy</span><span class="arrow">→</span></div>
+    </a>
+
+  </div>
+
+  <div class="thesis">
+    <div class="kicker">The thesis</div>
+    <p>Field marketing is the only function that operates across both demand creation and demand capture — at the intersection of Sales, Product Marketing, and the customer.</p>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="name">Jason Singh</span>
+    <span class="meta"><a href="mailto:jasonsingh826@gmail.com">jasonsingh826@gmail.com</a> · <a href="https://linkedin.com/in/jasonsingh1">linkedin.com/in/jasonsingh1</a> · May 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
